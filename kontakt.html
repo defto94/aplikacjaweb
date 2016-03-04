@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 	<head>
@@ -26,27 +26,20 @@
 	</head>
 	<body>
 		<!-- jQuery, link do internetowej biblioteki-->
-	<script src="http://code.jquery.com/jquery.js"></script>
-	
-	<!-- Jeśli nie będzie dostępu do internetowej jQuery, to jako plan awaryjny użyj wersji z jQuery z pliku-->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-	
-	<!-- Bootstrap JS (bilbioteka) -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	
-	<!-- Custom JS tu będą moje pliki związane z bilbioteką jQuery-->
-	<script src="includes/js/script.js"></script>
-	
-	
-	
-	<!--//////////////////////////////////////////////////////////////////////////////////-->
-	
-	
-	<div class = "container" id="myContainer">
+		<script src="http://code.jquery.com/jquery.js"></script>
+		
+		<!-- Jeśli nie będzie dostępu do internetowej jQuery, to jako plan awaryjny użyj wersji z jQuery z pliku-->
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+		
+		<!-- Bootstrap JS (bilbioteka) -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- Custom JS tu będą moje pliki związane z bilbioteką jQuery-->
+		<script src="includes/js/script.js"></script>
 	
 		<div class = "navbar-inverse navbar-fixed-top"> <!--FIXED-TOP -- dzięki temu zawsze będzie na całą szerokość-->
+		
 			<div class = "container"> <!--ponieważ chcemy aby zawartość na navbarze była rozciągnięta w taki sposób jak zawartość reszty strony-->
-				
 				
 				<button class = "navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle = "collapse" type = "button"> <!--obsługa urządzenia mobilnego - menu-->
 					<span class = "icon-bar"> </span>
@@ -56,6 +49,7 @@
 				</button>
 			
 				<a class="navbar-brand" href="/"> <img src="images/logo.png" alt ="Moje logo"></a>
+				
 				<div class = "nav-collapse collapse navbar-responsive-collapse"> <!--TRZY KLASY? UŻYTE PO TO, ABY PRZY ZMIANIE EKRANU NAVBAR ŁADNIE SIĘ ZWIJAŁ-->
 					<ul class = "nav navbar-nav pull-left">
 						<li class = "active">
@@ -93,73 +87,115 @@
 			</div> 
 		</div> <!--end navbar-->
 		
-		<div class = "carousel slide" id="myCarousel">
+		<div class = "container" id="myContainer">
 		
-		<!--wskazówki trzy kółeczka-->
-		<ol class = "carousel-indicators">
-			<li class = "active" data-slide-to="0" data-target="#myCarousel"></li>
-			<li data-slide-to="1" data-target="#myCarousel"></li>
-			<li data-slide-to="2" data-target="#myCarousel"></li>
-		</ol>
-		
-			<!--nakładka na zjdęcia, 3 "SLAJDY"-->
-			<div class = "carousel-inner">
-			
-				<div class = "item active" id="slide1">
-					<div class = "carousel-caption"> <!--do fajnego wyświetlania tekstu na karuzeli-->
-						<h4> Bootstrap </h4>
-						<p>LEARN sfksdjfksdfjdsfsdh jksfnjsdkfh asjkdf sdfjsdhf sdfdsf sdfj dhfsad fjhkf asdf sdf </p>
-					</div> <!--end div carousel-caption"-->
-				</div> <!--item-->
-				
-				<div class = "item" id= "slide2">
-					<div class = "carousel-caption"> <!--do fajnego wyświetlania tekstu na karuzeli-->
-						<h4>FACEBOOK</h4>
-						<p>HELLO IT'S ME! </p>
-					</div> <!--end div carousel-caption"-->
-				</div> <!--item-->
-				
-				<div class = "item" id="slide3">
-					<div class = "carousel-caption"> <!--do fajnego wyświetlania tekstu na karuzeli-->
-						<h4> TWITTER</h4>
-						<p>Something to watch </p>
-					</div> <!--end div carousel-caption"-->
-				</div> <!--item-->
-				
-			</div> <!--end carousel inner-->
-			
-				<!--strzałka w lewo i w prawo-->
-			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class = "icon-prev"> </span></a>
-			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class = "icon-next"> </span></a>
-			
-		</div> <!--end carousel-->
-		
-		<div class = "row" id="myRow">
-			<div class="col12"> <!--full szerokość-->
-			
-				<div class = "well">
-				
-					<div class= "page-header">
-						<h1> Jestem nagłówkiem <small> Jestem podnagłówkiem </small> </h1>
-					</div> <!--end pageheader-->
-				
-					<p class = "lead">Tu jest mój przykładowy tekst tego wella. LLALALAL coś miłego. </p> <!--Lead paragraf jest ładniej napisany, niż w zwykłych znacznikach <p>-->
-					
-					<a href="#" class = "btn btn-large btn-primary">Nice button?</a>
-				</div> <!--end well-->
-			
-			</div> <!--end col12-->
+		<div class = "row" id="myRowC">
+			<div class="col12"> 
+					<div class = "well">
+						<p class= "page-header"></p>
+						<h1> Kontakt </h1>
+					</div> <!--end well-->
+				</div>
 		</div> <!--end  row-->
+				
+				<div class="row" id="headingContact">
+					<div class="col12"> <!--full szerokość-->
+						<p id="notesContact"> Bardzo chętnie odpowiem na wszystkie Państwa pytania. Jeśli zaistniały jakieś sugestie co do treści bądź samego wyglądu strony proszę o skontaktowanie się ze mną.
+							Na każdą wiadomość odpowiadam w ciągu kilku godzin. <br>Do napisania! </p>
+					</div> <!--end col-12-->
+				</div>
 		
-		<div class = "row" id="myRowSecond">
-		
-		</div> <!--end  row-2-->
-		
-		
-	 </div> <!--end container-->
+			<div class = "row" id = "contactFeatures">
+			
+				<div class = "col-sm-6" id="firstColumnContact">
+				
+					<p class = "lead">Dane kontaktowe</p>
+					
+					<div class = "well" id="DataContact">
+						
+						<div class = "col-sm-6">
+							<p>Współpraca: </p>
+						</div>
+							
+						<div class = "col-sm-6">
+							<p>defto94@gmail.com </p>
+						</div>
+								
+						<div class = "col-sm-6">
+							<p>Pytania i uwagi: </p>
+						</div>
+							
+						<div class = "col-sm-6">
+							<p>defto94@gmail.com </p>
+						</div>
+	
+						<br> <br> <br> <br> 
+						
+						<div class = "col-sm-6">
+							<p>Facebook: </p>
+						</div>
+						
+						<div class = "col-sm-6">
+							<p>link tu kiedyś będzie </p>
+						</div>
 
-	<footer>
-	<div class = "container">
+						<div class = "col-sm-6">
+							<p>Google +: </p>
+						</div>
+						
+						<div class = "col-sm-6">
+							<p>link tu kiedyś będzie </p>
+						</div>
+						
+						<br> <br> <br> <br> 
+					</div>
+				</div> <!--end col-sm-6-->
+				
+				<div class = "col-sm-6" id="secondColumnContact">
+					<p class="lead">Napisz do mnie </p>
+						<div class = "well" id="formContact">
+							<form class="form-horizontal">
+						
+								<div class ="form-group">
+									<label class="col-lg-3 control-label" for="inputName">Imię i nazwisko</label>
+									<div class = "col-lg-9">
+										<input class = "form-control" id = "inputName"  type = "text">
+									</div>
+								</div>
+							
+								<div class ="form-group">
+									<label class="col-lg-3 control-label" for="inputEmail">Adres email</label>
+									<div class = "col-lg-9">
+										<input class = "form-control" id = "inputEmail" type = "email">
+									</div>
+								</div>
+							
+								<div class ="form-group">
+									<label class="col-lg-3 control-label" for="inputTheme">Temat</label>
+									<div class = "col-lg-9">
+										<input class = "form-control" id = "inputTheme" type = "text">
+									</div>
+								</div>
+							
+								<div class ="form-group">
+									<label class="col-lg-3 control-label" for="inputMessage">Treść</label>
+									<div class = "col-lg-9">
+										<textarea class = "form-control" id = "inputMessage"  rows = "4"> </textarea> 
+										<button class = "btn btn-info pull-right" type= "submit">Wyślij!</button>
+									</div>
+								</div>
+								
+						</form>
+					</div> <!--well-->
+				</div> <!--end col-sm-6-->
+				
+			</div> <!--end contactFeatures-->
+		</div> <!--end container-->
+
+	
+	<footer> <!--FOOTER MUSI BYĆ POZA CONTAINER, ABY MIEĆ SZEROKOŚĆ CAŁEJ STRONY-->
+	
+		<div class = "container">
 			<div class = "row">
 				<div class = "col-sm-3">
 					<h6>Copyright &copy; 2016 <i>Aleksandra Śrutkowska</i></h6>
@@ -191,11 +227,6 @@
 				</div> <!--div end col sm 2-->
 			</div> <!--end row-->
 	</footer>
-	
-	
-	
-	
-		
 
 	</body>
 </html>
