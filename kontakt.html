@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-
+-
 <html>
 	<head>
 		
@@ -24,7 +23,7 @@
 		<script src="includes/js/modernizr-2.6.2.min.js"></script>
 		
 	</head>
-	<body>
+	<body id = "kontaktBody>
 		<!-- jQuery, link do internetowej biblioteki-->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		
@@ -37,7 +36,7 @@
 		<!-- Custom JS tu będą moje pliki związane z bilbioteką jQuery-->
 		<script src="includes/js/script.js"></script>
 	
-		<div class = "navbar-inverse navbar-fixed-top"> <!--FIXED-TOP -- dzięki temu zawsze będzie na całą szerokość-->
+		<div class = "navbar-default navbar-fixed-top" role="navigation"> <!--FIXED-TOP -- dzięki temu zawsze będzie na całą szerokość-->
 		
 			<div class = "container"> <!--ponieważ chcemy aby zawartość na navbarze była rozciągnięta w taki sposób jak zawartość reszty strony-->
 				
@@ -48,29 +47,37 @@
 					<span class = "icon-bar"> </span>
 				</button>
 			
-				<a class="navbar-brand" href="/"> <img src="images/logo.png" alt ="Moje logo"></a>
+				<a class="navbar-brand" href="glowna.html"> <img src="images/logo.png" alt ="Moje logo"></a>
 				
 				<div class = "nav-collapse collapse navbar-responsive-collapse"> <!--TRZY KLASY? UŻYTE PO TO, ABY PRZY ZMIANIE EKRANU NAVBAR ŁADNIE SIĘ ZWIJAŁ-->
-					<ul class = "nav navbar-nav pull-left">
-						<li class = "active">
-							<a href = "glowna.html">Start</a>
+					<ul role = "menu" class = "nav navbar-nav pull-left">
+						<li>
+							<a href = "glowna.html" id= "glowna">START</a>
 							</li>
 							<li>
-							<a href = "#">Artykuły</a>
+							<div class = "slash"> / </div>
 							</li>
 							<li>
-								<a href = "#">Przepisy</a>
+							<a href = "#">ARTYKUŁY</a>
 							</li>
-							
 							<li>
-								<a href = "kontakt.html">Kontakt</a>
+							<div class = "slash"> / </div>
+							</li>
+							<li>
+								<a href = "#">PRZEPISY</a>
+							</li>
+							<li>
+							<div class = "slash"> / </div>
+							</li>
+							<li>
+								<a href = "kontakt.html">KONTAKT</a>
 							</li>
 							
 						</ul>
 							<ul class = "nav navbar-nav pull-right">
 								<li class = "dropdown">
 									
-									<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"><span class = "glyphicon glyphicon-user"> </span>Logowanie <strong class = "caret"></strong></a>
+									<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"><span class = "glyphicon glyphicon-user"> </span>LOGOWANIE<strong class = "caret"></strong></a>
 									
 									<ul class = "dropdown-menu">
 									<li>
@@ -91,7 +98,7 @@
 		
 		<div class = "row" id="myRowC">
 			<div class="col12"> 
-					<div class = "well">
+					<div class = "well " id="wellOfContactHead">
 						<p class= "page-header"></p>
 						<h1> Kontakt </h1>
 					</div> <!--end well-->
@@ -155,7 +162,7 @@
 					<p class="lead">Napisz do mnie </p>
 						<div class = "well" id="formContact">
 							<form class="form-horizontal">
-						
+							
 								<div class ="form-group">
 									<label class="col-lg-3 control-label" for="inputName">Imię i nazwisko</label>
 									<div class = "col-lg-9">
@@ -181,12 +188,19 @@
 									<label class="col-lg-3 control-label" for="inputMessage">Treść</label>
 									<div class = "col-lg-9">
 										<textarea class = "form-control" id = "inputMessage"  rows = "4"> </textarea> 
-										<button class = "btn btn-info pull-right" type= "submit">Wyślij!</button>
+										<button class = "btn btn-info pull-right" type= "submit" id="sendAlert">Wyślij!</button>
+										
 									</div>
 								</div>
 								
 						</form>
 					</div> <!--well-->
+					
+					<div class="alert alert-success alert-block fade in" id = "successAlert"> <!--fade in aby zamknąć powiadomienie"-->
+						<button type = "button" class = "close" data-dismiss = "alert">&times;</button>
+						<h4>Wysłano!</h4>
+						<p>Twoja wiadomość została wysłana. Wkrótce otrzymasz odpowiedź.</p>
+					</div>
 				</div> <!--end col-sm-6-->
 				
 			</div> <!--end contactFeatures-->
@@ -198,11 +212,11 @@
 		<div class = "container">
 			<div class = "row">
 				<div class = "col-sm-3">
-					<h6>Copyright &copy; 2016 <i>Aleksandra Śrutkowska</i></h6>
+					<p class = "headersInFooter">Copyright &copy; 2016 <i>Aleksandra Śrutkowska</i></p>
 				</div> <!--div end col sm 2-->
 				
 				<div class = "col-sm-4">
-					<h6>O autorce</h6>
+					<p class = "headersInFooter">O autorce</p>
 					<p> Nie jestem studentką medycyny ani AWFu, wręcz przeciwnie studiuję informatykę. <br> Dziwne? Prawdopodobnie. <br>
 					Czy stosownym będzie jeśli napiszę, że interesuję się zdrowym trybem życia? Nie wiem. Jednak staram się nie tylko interesować, a również wcielać go w życie.
 					Jestem po dwóch dietach, mniej oraz bardziej udanej. Regularnie uczęszczam na siłownię i unikam fast foodów. Unikam... Nie zapominaj, że jestem programistką. ;-) <br>
@@ -211,17 +225,18 @@
 				</div> <!--col-sm-4"-->
 				
 				<div class = "col-sm-2">
-					<h6> Navigation </h6>
+					<p class = "headersInFooter"> Navigation </p>
 					<ul class = "unstyled">
 						<li> <a href="#">Start </a></li>
 						<li> <a href="#">Artykuły </a></li>
 						<li> <a href="#">Przepisy </a></li>
+						<li> <a href="#">Zaloguj się </a></li>
 						<li> <a href="#">Dołącz do nas! </a></li>
 					</ul>
 				</div> <!--div end col sm 2-->
 				
 				<div class = "col-sm-3">
-					<h6> Cookies </h6>
+					<p class = "headersInFooter"> Cookies </p>
 					<p> Drogi czytelniku, ta strona korzysta  z ciasteczek. Ich działanie pomaga mi w świadczeniu usług na wysokim poziomie. 
 					Są one dostosowywane do Twoich potrzeb. Jednakże w każdej chwili możesz wyłączyć cookies w swojej przeglądarce. </p>
 				</div> <!--div end col sm 2-->

@@ -24,7 +24,7 @@
 		<script src="includes/js/modernizr-2.6.2.min.js"></script>
 		
 	</head>
-	<body>
+	<body id = "glownaBody">
 		<!-- jQuery, link do internetowej biblioteki-->
 	<script src="http://code.jquery.com/jquery.js"></script>
 	
@@ -44,9 +44,9 @@
 	
 	<div class = "container" id="myContainer">
 	
-		<div class = "navbar-inverse navbar-fixed-top"> <!--FIXED-TOP -- dzięki temu zawsze będzie na całą szerokość-->
+		<div class = "navbar-default navbar-fixed-top" role="navigation"> <!--FIXED-TOP -- dzięki temu zawsze będzie na całą szerokość-->
+		
 			<div class = "container"> <!--ponieważ chcemy aby zawartość na navbarze była rozciągnięta w taki sposób jak zawartość reszty strony-->
-				
 				
 				<button class = "navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle = "collapse" type = "button"> <!--obsługa urządzenia mobilnego - menu-->
 					<span class = "icon-bar"> </span>
@@ -56,34 +56,45 @@
 				</button>
 			
 				<a class="navbar-brand" href="glowna.html"> <img src="images/logo.png" alt ="Moje logo"></a>
+				
 				<div class = "nav-collapse collapse navbar-responsive-collapse"> <!--TRZY KLASY? UŻYTE PO TO, ABY PRZY ZMIANIE EKRANU NAVBAR ŁADNIE SIĘ ZWIJAŁ-->
 					<ul class = "nav navbar-nav pull-left">
-							<li class = "active">
-								<a href = "#">Artykuły</a>
+						<li>
+							<a href = "glowna.html" id= "glowna">START</a>
 							</li>
 							<li>
-								<a href = "#">Przepisy</a>
+							<div class = "slash"> / </div>
 							</li>
-							
 							<li>
-								<a href = "kontakt.html">Kontakt</a>
+							<a href = "#">ARTYKUŁY</a>
+							</li>
+							<li>
+							<div class = "slash"> / </div>
+							</li>
+							<li>
+								<a href = "#">PRZEPISY</a>
+							</li>
+							<li>
+							<div class = "slash"> / </div>
+							</li>
+							<li>
+								<a href = "kontakt.html">KONTAKT</a>
 							</li>
 							
 						</ul>
 							<ul class = "nav navbar-nav pull-right">
 								<li class = "dropdown">
 									
-									<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"><span class = "glyphicon glyphicon-user"> </span>Logowanie <strong class = "caret"></strong></a>
+									<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"><span class = "glyphicon glyphicon-user"> </span>LOGOWANIE<strong class = "caret"></strong></a>
 									
 									<ul class = "dropdown-menu">
 									<li>
-										<a href="#"><span class = "glyphicon glyphicon-edit"></span> Zaloguj się</a>
+										<a href="#" data-toggle= "modal"><span class = "glyphicon glyphicon-edit"></span> Zaloguj się</a>
 									</li>
 									
 									<li>
 										<a href="#"><span class = "glyphicon glyphicon-plus"></span> Zarejestruj się</a>
 									</li>
-									
 								</li>
 							</ul>
 				</div>
@@ -131,25 +142,40 @@
 			
 		</div> <!--end carousel-->
 		
-		<div class = "row" id="myRow">
-			<div class="col12"> <!--full szerokość-->
-			
-				<div class = "well">
-				
-					<div class= "page-header">
-						<h1> Jestem nagłówkiem <small> Jestem podnagłówkiem </small> </h1>
-					</div> <!--end pageheader-->
-				
-					<p class = "lead">Tu jest mój przykładowy tekst tego wella. LLALALAL coś miłego. </p> <!--Lead paragraf jest ładniej napisany, niż w zwykłych znacznikach <p>-->
+		
+		<div class = "row" id="threeColumns"> 
+			<div class = "col-sm-4 feature"> <!--first column-->
+				<div class = "panel panel-success panelsTransition">
+					<div class = "panel-heading">
+						<h3 class = "panel-title">Cierpliwość</h3>
+					</div> <!--end panel-heading-->
+					<p> Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. </p>
 					
-					<a href="#" class = "btn btn-large btn-primary">Nice button?</a>
-				</div> <!--end well-->
+				</div> <!--end panel-->
+			</div> <!-- end first column-->
 			
-			</div> <!--end col12-->
-		</div> <!--end  row-->
-		
-		<div class = "row" id="myRowSecond">
-		
+			<div class = "col-sm-4 feature"> <!--second column-->
+				<div class = "panel panel-primary panelsTransition">
+					<div class = "panel-heading" >
+						<h3 class = "panel-title">Wytrwałość</h3>
+					</div> <!--end panel-heading-->
+					<p> Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy.
+						Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy.		
+						Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy.</p>
+					
+				</div> <!--end panel-->
+			</div> <!-- end second column-->
+			
+			<div class = "col-sm-4 feature"> <!--third column-->
+				<div class = "panel panel-success panelsTransition">
+					<div class = "panel-heading">
+						<h3 class = "panel-title">Zaangażowanie</h3>
+					</div> <!--end panel-heading-->
+					<p> Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. </p>
+					
+				</div> <!--end panel-->
+			</div> <!-- end third column-->
+			
 		</div> <!--end  row-2-->
 		
 		
@@ -161,11 +187,11 @@
 		<div class = "container">
 			<div class = "row">
 				<div class = "col-sm-3">
-					<h6>Copyright &copy; 2016 <i>Aleksandra Śrutkowska</i></h6>
+					<p class = "headersInFooter">Copyright &copy; 2016 <i>Aleksandra Śrutkowska</i></p>
 				</div> <!--div end col sm 2-->
 				
 				<div class = "col-sm-4">
-					<h6>O autorce</h6>
+					<p class = "headersInFooter">O autorce</p>
 					<p> Nie jestem studentką medycyny ani AWFu, wręcz przeciwnie studiuję informatykę. <br> Dziwne? Prawdopodobnie. <br>
 					Czy stosownym będzie jeśli napiszę, że interesuję się zdrowym trybem życia? Nie wiem. Jednak staram się nie tylko interesować, a również wcielać go w życie.
 					Jestem po dwóch dietach, mniej oraz bardziej udanej. Regularnie uczęszczam na siłownię i unikam fast foodów. Unikam... Nie zapominaj, że jestem programistką. ;-) <br>
@@ -174,17 +200,18 @@
 				</div> <!--col-sm-4"-->
 				
 				<div class = "col-sm-2">
-					<h6> Navigation </h6>
+					<p class = "headersInFooter"> Navigation </p>
 					<ul class = "unstyled">
 						<li> <a href="#">Start </a></li>
 						<li> <a href="#">Artykuły </a></li>
 						<li> <a href="#">Przepisy </a></li>
+						<li> <a href="#">Zaloguj się </a></li>
 						<li> <a href="#">Dołącz do nas! </a></li>
 					</ul>
 				</div> <!--div end col sm 2-->
 				
 				<div class = "col-sm-3">
-					<h6> Cookies </h6>
+					<p class = "headersInFooter"> Cookies </p>
 					<p> Drogi czytelniku, ta strona korzysta  z ciasteczek. Ich działanie pomaga mi w świadczeniu usług na wysokim poziomie. 
 					Są one dostosowywane do Twoich potrzeb. Jednakże w każdej chwili możesz wyłączyć cookies w swojej przeglądarce. </p>
 				</div> <!--div end col sm 2-->
