@@ -24,7 +24,7 @@
 		<script src="includes/js/modernizr-2.6.2.min.js"></script>
 		
 	</head>
-	<body>
+	<body id = "glownaBody">
 		<!-- jQuery, link do internetowej biblioteki-->
 	<script src="http://code.jquery.com/jquery.js"></script>
 	
@@ -89,7 +89,7 @@
 									
 									<ul class = "dropdown-menu">
 									<li>
-										<a href="#" data-toggle= "modal"><span class = "glyphicon glyphicon-edit"></span> Zaloguj się</a>
+										<a href="#"><span class = "glyphicon glyphicon-edit"></span> Zaloguj się</a>
 									</li>
 									
 									<li>
@@ -143,41 +143,70 @@
 		</div> <!--end carousel-->
 		
 		
-		<div class = "row" id="threeColumns"> 
-			<div class = "col-sm-4 feature"> <!--first column-->
-				<div class = "panel panel-success panelsTransition">
-					<div class = "panel-heading">
-						<h3 class = "panel-title">Cierpliwość</h3>
-					</div> <!--end panel-heading-->
-					<p> Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. </p>
-					
-				</div> <!--end panel-->
-			</div> <!-- end first column-->
-			
-			<div class = "col-sm-4 feature"> <!--second column-->
-				<div class = "panel panel-primary panelsTransition">
-					<div class = "panel-heading" >
-						<h3 class = "panel-title">Wytrwałość</h3>
-					</div> <!--end panel-heading-->
-					<p> Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy.
-						Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy.		
-						Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy.</p>
-					
-				</div> <!--end panel-->
-			</div> <!-- end second column-->
-			
-			<div class = "col-sm-4 feature"> <!--third column-->
-				<div class = "panel panel-success panelsTransition">
-					<div class = "panel-heading">
-						<h3 class = "panel-title">Zaangażowanie</h3>
-					</div> <!--end panel-heading-->
-					<p> Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. Ethical ut assumenda lumbersexual, small batch YOLO tousled trust fund anim occupy. </p>
-					
-				</div> <!--end panel-->
-			</div> <!-- end third column-->
-			
+		<div class = "row" id="headerOfColumns"> 
+			<span class = "Text first"> Potrzebujesz zmian? Chciałbyś rozpocząć zdrowy tryb życia ale nie masz odwagi? </span> <br>
+			<span class = "Text second"> Nic prostszego! <br>Porady, przepisy oraz wsparcie masz na wyciągnięcie ręki.</span>
 		</div> <!--end  row-2-->
 		
+		<div class = "row threeColumns"> 
+			<div class = "col-sm-4 feature"> <!--first column-->
+				<div class = "circle findYou">
+					<span class = "glyphicon glyphicon-eye-open">
+				</div>
+					<span class = "headerColumns">WYZNACZ CEL</span>
+				
+				
+			</div> <!-- end third column-->
+			
+			<div class = "col-sm-4 feature"> <!--first column-->
+				
+				<div class = "circle findYou">
+					<span class = "glyphicon glyphicon-time">
+				</div>
+					<span class = "headerColumns">BĄDŹ KONSEKWENTNY</span>
+				
+				
+			</div> <!-- end third column-->
+				
+			
+			<div class = "col-sm-4 feature"> <!--first column-->
+				
+				<div class = "circle findYou">
+					<span class = "glyphicon glyphicon-check">
+				</div>
+					<span class = "headerColumns">OSIĄGNIJ SUKCES</span>
+				
+				
+			</div> <!-- end third column-->
+				
+			</div> <!-- end third column-->
+			
+		
+		
+		
+		<div class = "row" id = "mainNote"> 
+			
+			<div class = "col-sm-3 feature" id= "photoLeft"> <!--first column-->
+				<img src = "images/main/happy.png" alt = "Happy People">
+			</div>
+			
+			<div class = "col-sm-6 feature"> <!--first column-->
+				<p class = "TextSecondMain">
+				Niekoniecznie zmiana Twojego stylu życia musi być związana z utratą wagi! Choć wśród osób, które zaczynają interesować się zmianem życia na <i>#fit</i> są głównie osoby mające problemy z otyłością. 
+				Oczywiście bardzo dobrze, że tak się dzieje. Jednak  jeśli nie masz problemów ze swoją wagą nieoznacza to, że musisz żyć niezdrowo!
+				Niezależnie od wzrostu, wieku czy wagi każdy powinien zacząć zmieniać swoje życie na lepsze. <b>Dlaczego?</b><br>
+				Musimy posiadać wiedzę na temat tego czym się żywimy, oraz jak ogromny wpływ
+				na nasze samopoczucie ma to co jadamy i czy wykonujemy jakąkolwiek <b>REGULARNĄ</b> aktywność fizyczną. <br>
+				<b>Zaczynamy?!</b>
+				</p>
+			</div>
+			
+			<div class = "col-sm-3 feature" id= "photoRight"> <!--first column-->
+				<img src = "images/main/heart.jpg" alt = "Halth">
+			</div>
+			
+			
+		</div>
 		
 	 </div> <!--end container-->
 
@@ -200,7 +229,7 @@
 				</div> <!--col-sm-4"-->
 				
 				<div class = "col-sm-2">
-					<p class = "headersInFooter"> Navigation </p>
+					<p class = "headersInFooter"> Nawigacja</p>
 					<ul class = "unstyled">
 						<li> <a href="#">Start </a></li>
 						<li> <a href="#">Artykuły </a></li>
@@ -216,6 +245,7 @@
 					Są one dostosowywane do Twoich potrzeb. Jednakże w każdej chwili możesz wyłączyć cookies w swojej przeglądarce. </p>
 				</div> <!--div end col sm 2-->
 			</div> <!--end row-->
+		</div>
 	</footer>
 	
 	

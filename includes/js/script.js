@@ -25,6 +25,10 @@ $(function() {
 	
 	});
 	
+	//walidacja formularza
+	
+	
+	
 });
 	
 	
