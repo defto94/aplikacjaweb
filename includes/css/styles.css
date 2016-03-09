@@ -17,17 +17,20 @@
 	#formContact {
 		background-color:#8FBC8F;
 		border-radius: 10px;
+		background-color: rgba(143, 188, 143, 0.7);
 	}
-	
+
 	#DataContact {
 		background-color:#8FBC8F;
 		border-radius: 10px;
 		margin-top:20px;
+		background-color: rgba(143, 188, 143, 0.7)
 		
 	}
 	
 	#wellOfContactHead {
 		background-color:#8FBC8F;
+		background-color: rgba(245, 245, 245, 0.7);
 	}
 
 	
@@ -84,6 +87,37 @@
 		text-color: #2197e0;
 	}
 	
+	#btnLogin {
+		height: 51px;
+		margin-left:200px;
+	}
+	 #btnLogin:active {
+        background-color:grey;
+      }
+	      
+	#colorLine{ 
+		height: 5px;
+		border-top: 0;
+		background: #c4e17f;
+		border-radius: 5px;
+		background-image: linear-gradient(to left,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,
+		#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
+}
+	
+	#zarejestrujBody {
+		background-color:	#B2DFEE;
+	}
+	
+	#zalogujBody {
+		background-color:	#B2DFEE;
+	}
+	
+	#kontaktBody {
+		 background-image: url("../../images/tlo.jpg");
+		 background-repeat: no-repeat;
+	}
+	
+	
 /* --------------------------------------
    Typography
    -------------------------------------- */
@@ -107,6 +141,7 @@
 		margin-top:50px;
 		margin-down:40px;
 		font-size:17px;
+		color:white;
 	}
 	
 	#contactFeatures {
@@ -115,6 +150,15 @@
 	
 	#secondColumnContact {
 		margin-bottom:20px;
+	}
+	
+	#loginForm {
+		margin-top:30px;
+		margin-bottom:30px;
+	}
+	
+	.btnZaloguj {
+		width:360px;
 	}
 	
 	.threeColumns {
@@ -157,6 +201,22 @@
 		color: #5d5d5d;
 		padding-bottom: 40px;
 	}
+	
+	#LoginHeader {
+		margin-top:150px;
+		text-align:center;
+	}
+	
+	#loginLink p {
+		margin-top:55px;
+		font-size:13px;
+		text-align:center;
+	}
+	
+	#btnRegistration {
+		margin-top:20px;
+		margin-bottom:15px;
+	}
 
 /* --------------------------------------
    Navbar
@@ -185,7 +245,8 @@
 	
 	.navbar-default .navbar-nav > .open > a,
 	.navbar-default .navbar-nav > .open > a:hover,
-	.navbar-default .navbar-nav > .open > a:focus {
+	.navbar-default .navbar-nav > .open > a:focus 
+	{
 		background-color: #0e0e0e;
 		color: #FFFFFF;
 	}
@@ -248,6 +309,8 @@
 		
 		color:#99ffcc;
 	}
+	
+
 
 /* --------------------------------------
    Media Queries

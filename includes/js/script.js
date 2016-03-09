@@ -27,7 +27,8 @@ $(function() {
 	
 	//walidacja formularza
 	
-	
+
+
 	
 });
 	
