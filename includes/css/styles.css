@@ -117,8 +117,27 @@
 		 background-repeat: no-repeat;
 	}
 	
+	#sectionsArticles {
+		margin-top:80px;
+		
+	}
 	
-/* --------------------------------------
+	.nav-tabs a {
+		color: #5d5d5d;
+	}
+	
+	.nav-tabs:visited {
+		background-color: yellow;
+	}
+	
+	.tab-content p {
+			padding-top:20px;
+	}
+	.tab-content h4{
+	
+		padding-top:10px;
+	}
+/* --	------------------------------------
    Typography
    -------------------------------------- */
 	body {
@@ -310,6 +329,7 @@
 		color:#99ffcc;
 	}
 	
+	
 
 
 /* --------------------------------------
@@ -366,3 +386,4 @@
 		background: url('../../images/karuzela/carousel_large_03.jpg') top left no-repeat;
 	}
 }
+
