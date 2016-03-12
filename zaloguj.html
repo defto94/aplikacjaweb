@@ -71,8 +71,23 @@
 							<li>
 							<div class = "slash"> / </div>
 							</li>
-							<li>
-								<a href = "#">PRZEPISY</a>
+							<li class = "dropdown">
+								<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">PRZEPISY <strong class = "caret"> </strong> </a>
+								<ul class = "dropdown-menu">
+									<li>
+										<a href = "kategorie.html">Wszystkie kategorie</a>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li>
+										<a href = "kategorie.html">Zupy</a>
+									</li>
+									<li>
+										<a href = "kategorie.html">Sałatki</a>
+									</li>
+									<li>
+										<a href = "kategorie.html">Ciasta</a>
+									</li>
+								</ul>
 							</li>
 							<li>
 							<div class = "slash"> / </div>
@@ -109,15 +124,21 @@
 		<div class = "col-sm-4"></div> <!--martwy odstęp-->
 			<div class = "col-sm-6" id="loginForm">	
 				<form class="form-horizontal">
-					<div class ="form-group">
-						<div class = "col-lg-8">
-							<input class = "form-control" id = "inputEmailLog"  placeholder="E-mail" type = "text">
+					<div class ="form-group">		
+						<div class = "col-lg-8">				
+							<div class = "input-group"> <!--klasa dzięki której wyświetla się po lewej stronie człowiek -->
+								<span class = "input-group-addon glyphicon glyphicon-envelope"></span>
+								<input class = "form-control" id = "inputEmailLog"  placeholder="E-mail" type = "text">
+							 </div>
 						</div>
 					</div>
 								
 					<div class ="form-group">
 						<div class = "col-lg-8">
-							<input class = "form-control" id = "inputPasswordLog"  placeholder="Hasło" type = "text">
+							<div class = "input-group">
+								<span class = "input-group-addon glyphicon glyphicon-lock"></span>
+								<input class = "form-control" id = "inputPasswordLog"  placeholder="Hasło" type = "text">
+							</div>
 									<div class="checkbox">
 										<label>
 											<input type="checkbox"> Zapamiętaj mnie	
@@ -127,8 +148,6 @@
 									<a href="zarejestruj.html" id = "loginLink"><p>Nie masz jeszcze konta?</p></a>
 						</div>
 					</div>
-					
-					
 				</form>				
 			</div> <!--end col-sm-6-->
 	</div>
@@ -153,11 +172,11 @@
 				<div class = "col-sm-2">
 					<p class = "headersInFooter"> Nawigacja</p>
 					<ul class = "unstyled">
-						<li> <a href="#">Start </a></li>
-						<li> <a href="#">Artykuły </a></li>
-						<li> <a href="#">Przepisy </a></li>
-						<li> <a href="#">Zaloguj się </a></li>
-						<li> <a href="#">Dołącz do nas! </a></li>
+						<li> <a href="glowna.html">Start </a></li>
+						<li> <a href="artykuly.html">Artykuły </a></li>
+						<li> <a href="kategorie.html">Przepisy </a></li>
+						<li> <a href="zaloguj.html">Zaloguj się </a></li>
+						<li> <a href="zarejestruj.html">Dołącz do nas! </a></li>
 					</ul>
 				</div> <!--div end col sm 2-->
 				

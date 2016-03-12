@@ -24,7 +24,8 @@
 		background-color:#8FBC8F;
 		border-radius: 10px;
 		margin-top:20px;
-		background-color: rgba(143, 188, 143, 0.7)
+		background-color: rgba(143, 188, 143, 0.7);
+		margin-bottom:40px;
 		
 	}
 	
@@ -141,6 +142,19 @@
 	.tab-content h4{
 	
 		padding-top:10px;
+	}
+	
+	#categories {
+		margin-top: 150px;
+		text-align:center;
+	}
+	
+	#categories img {
+		padding-top:10px;
+		padding-bottom:13px;
+		margin-top:23px;
+		margin-bottom:33px;
+		
 	}
 /* --	------------------------------------
    Typography
@@ -343,6 +357,18 @@
    background: url('../../images/arrow2.png') no-repeat center center;
 	}
 	
+	.dropdown-menu {
+		background-color:#333;
+	}
+	
+	.dropdown-menu li a {
+		color:#FFFFFF;
+	}
+	
+	.panel-title {
+		text-align:center;
+		color: #333;
+	}
 	
 
 
