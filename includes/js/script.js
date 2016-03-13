@@ -49,7 +49,20 @@ $(function() {
 	po kliknięciu na strzałkę przewija płynnie stronę do góry.
 
 */
+	$(document).ready(function(){
 	
+	$(".btnInArticlesShow").click(function(){
+		$(this).hide();
+		$(".btnInArticlesHide").show();
+	});
+	
+	$(".btnInArticlesHide").click(function(){
+		$(this).hide();
+		$(".btnInArticlesShow").show();
+	});
+
+	
+	});
 });
 	
 	

@@ -1,49 +1,63 @@
-
-/* --------------------------------------
-   Layout
+  
+  /* --------------------------------------
+	Footer
    -------------------------------------- */
-   
+  
+  
 .headersInFooter {
 		color:#99ffcc;
 }
-	
-a#upArray {
-   position: fixed;
-   bottom: 9px;
-   right: 9px;
-   width: 30px;
-   height: 30px;
-   background: url('../../images/arrow2.png');
-}
-	
-a#upArray:hover {
-	height: 45px;
-}	
-	
+
+  /* --------------------------------------
+	Contact.html
+   -------------------------------------- */
+   
 #inputMessage {
 	margin-bottom: 15px;
 }
-	
-#formContact {
-	border-radius: 10px;
-	background-color: rgba(0, 0, 0, 0.6);
-	color: #2197e0;
-}
 
-#DataContact {
-	background-color:#8FBC8F;
+#dataContact {
 	border-radius: 10px;
 	margin-top:20px;
 	background-color: rgba(0, 0, 0, 0.6);
 	color: #2197e0;
 	margin-bottom:40px;
 }
-	
+
+#kontaktBody {
+	background-image: url("../../images/tlo.jpg");
+	background-repeat: no-repeat;
+}
+
+#contactFeatures {
+	margin-top:50px;
+}
+
+#secondColumnContact {
+	margin-bottom:20px;
+}
+
+#notesContact {
+	margin-top:50px;
+	margin-down:40px;
+	font-size:17px;
+	color:white;
+}
+
+#formContact {
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #2197e0;
+}
 #wellOfContactHead {
 	background-color: rgba(0, 0, 0, 0.6);
 	color: #2197e0;
 }
-	
+
+  /* --------------------------------------
+	Main.html
+   -------------------------------------- */
+
 .circle.findYou {
 	font-size: 75px;
 	color: #FFFFFF;
@@ -58,20 +72,65 @@ a#upArray:hover {
 	transform: scale(1.1);
 	cursor:default;
 }
+
+.threeColumns {
+	margin-top:50px;
+	text-align:center;
+	margin-bottom:100px;
+}
+#glownaBody {
+	background-image: url("../../images/body.jpg");
+}
+
+.headerColumns {
+	font-family: "Roboto";
+	font-weight: bold;
+	font-size: 22px;
+	display: block;
+	line-height: 70px;
+	color: #2197e0;	
+}
+
+.Text {
+	font-weight: 300px;
+	font-size:30px;
+	text-align:center;
+}
 	
+.TextSecondMain {
+	font-weight: 300px;
+	font-size:19px;
+	color: #5d5d5d;
+	margin-top:100px;
+	text-align:left;	
+	font-family: "Roboto";
+}
+	
+.first {
+	padding-top: 40px;
+	color: #2197e0;	
+}
+	
+.second {
+	color: #5d5d5d;
+	padding-bottom: 40px;
+}
+
 #mainNote {
 	margin-top:100px;
 	margin-bottom:100px;
 	text-align:center;
 	text-color: #2197e0;
 }
-	
-#btnLogin {
-	height: 51px;
-	margin-left:200px;
-	background-color:grey;
+
+#headerOfColumns {
+	margin-top:50px;
+	text-align:center;
 }
-	      
+
+   /* --------------------------------------
+	LogIn.html & Registration.html
+   -------------------------------------- */     
 #colorLine{ 
 	height: 5px;
 	border-top: 0;
@@ -81,26 +140,85 @@ a#upArray:hover {
 	#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
 }
 
+#zarejestrujBody {
+	background-color:	#B2DFEE;
+}
+
+#zalogujBody {
+	background-color:	#B2DFEE;
+}
+
+#loginForm {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+#btnRegistration {
+	margin-top:20px;
+	margin-bottom:15px;
+}
+
+#loginHeader {
+	margin-top:150px;
+	text-align:center;
+}
+	
+#loginLink p {
+	margin-top:55px;
+	font-size:13px;
+	text-align:center;
+}
+ /* --------------------------------------
+	Articles.html
+   -------------------------------------- */     
+
 #artykulyBody{
 	background-image:	url("../../images/artykuly2.jpg");	
 }
 
-#zarejestrujBody {
-	background-color:	#B2DFEE;
+#artykulyBody h4{
+	margin-top:70px;
+	font-size:25px;
+	color: #500000;
 }
-	
-#zalogujBody {
-	background-color:	#B2DFEE;
+
+.wellsInArticles {
+	background-color: rgba(1, 1, 1, 0.1);
+	border-style: none;
 }
-	
-#kontaktBody {
-	background-image: url("../../images/tlo.jpg");
-	background-repeat: no-repeat;
+
+.wellsInArticles img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
 }
-	
-#glownaBody {
-	background-image: url("../../images/body.jpg");
+
+p.btnInArticlesShow,
+p.btnInArticlesHide{
+	background-color: rgba(1, 1, 1, 0.0);
+	border-style: none;
+	color: #333;
+	font-weight:bold;
+	letter-spacing: 1px;
 }
+
+p.btnInArticlesShow:hover,
+p.btnInArticlesHide:hover {
+	background-color: rgba(1, 1, 1, 0.0);
+	border-style: none;
+	color: #333;
+	font-weight:bold;
+	color: #8d8d8d;
+}
+
+.entryText {
+	font-size: 17px;
+	margin-top:25px;
+}
+
+ /* --------------------------------------
+	Categories.html
+   -------------------------------------- */   
 	
 #categories {
 	margin-top: 150px;
@@ -112,106 +230,13 @@ a#upArray:hover {
 	padding-top:10px;
 	padding-bottom:13px;
 	margin-top:23px;
-	margin-bottom:33px;
-		
+	margin-bottom:33px;		
 }
 	
 #categoriesSecond {
 	text-align:center;
 }
-	
-/* --	------------------------------------
-   Typography
-   -------------------------------------- */
-	
-ul.unstyled {
-	list-style:none;
-	padding:0;
-}
-	
-#notesContact {
-	margin-top:50px;
-	margin-down:40px;
-	font-size:17px;
-	color:white;
-}
-	
-#contactFeatures {
-	margin-top:50px;
-}
-	
-#secondColumnContact {
-	margin-bottom:20px;
-}
-	
-#loginForm {
-	margin-top:30px;
-	margin-bottom:30px;
-}
-	
-.btnZaloguj {
-	width:360px;
-}
-	
-.threeColumns {
-	margin-top:50px;
-	text-align:center;
-	margin-bottom:100px;
-}
-	
-.headerColumns {
-	font-family: "Roboto";
-	font-weight: bold;
-	font-size: 22px;
-	display: block;
-	line-height: 70px;
-	color: #2197e0;	
-	}
-	
-#headerOfColumns {
-	margin-top:80px;
-	text-align:center;
-}
-	
-.Text {
-	font-weight: 300px;
-	font-size:30px;
-}
-	
-.TextSecondMain {
-	font-weight: 300px;
-	font-size:16px;
-	color: #5d5d5d;
-	margin-top:100px;
-	text-align:left;	
-}
-	
-.first {
-	padding-top: 40px;
-	color: #2197e0;
-			
-}
-	
-.second {
-	color: #5d5d5d;
-	padding-bottom: 40px;
-}
-	
-#loginHeader {
-	margin-top:150px;
-	text-align:center;
-}
-	
-#loginLink p {
-	margin-top:55px;
-	font-size:13px;
-	text-align:center;
-}
-	
-#btnRegistration {
-	margin-top:20px;
-	margin-bottom:15px;
-}
+
 
 /* --------------------------------------
    Navbar
@@ -353,7 +378,23 @@ footer {
 	cursor:default;
 }
 
-
+a#upArray {
+   position: fixed;
+   bottom: 9px;
+   right: 9px;
+   width: 30px;
+   height: 30px;
+   background: url('../../images/arrow2.png');
+}
+	
+a#upArray:hover {
+	height: 45px;
+}	
+	
+ul.unstyled {
+	list-style:none;
+	padding:0;
+}
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
