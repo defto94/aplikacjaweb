@@ -16,17 +16,8 @@
 	margin-bottom: 15px;
 }
 
-#dataContact {
-	border-radius: 10px;
-	margin-top:20px;
-	background-color: rgba(0, 0, 0, 0.6);
-	color: #2197e0;
-	margin-bottom:40px;
-}
-
 #kontaktBody {
-	background-image: url("../../images/tlo.jpg");
-	background-repeat: no-repeat;
+	background-image:	url("../../images/art4.jpg");	
 }
 
 #contactFeatures {
@@ -38,20 +29,39 @@
 }
 
 #notesContact {
-	margin-top:50px;
 	margin-down:40px;
-	font-size:17px;
-	color:white;
+	font-size:15px;
+	color:black;
 }
 
 #formContact {
-	border-radius: 10px;
 	background-color: rgba(0, 0, 0, 0.6);
-	color: #2197e0;
+	color: #FFFFFF;
 }
+
 #wellOfContactHead {
-	background-color: rgba(0, 0, 0, 0.6);
-	color: #2197e0;
+	margin-top:30px;
+	background-color: rgba(65,105,225, 0.6);
+	color: #FFFFFF;
+	margin-bottom:50px;
+	
+}
+
+.glyphicon-phone{
+	font-size:50px;
+	padding-left:30px;
+	color:black;
+}
+
+.icons {
+	padding-top:30px;
+}
+.icons img {
+	padding-bottom:7px;
+}
+.popover {
+	background-color:#333;
+	color: white;
 }
 
   /* --------------------------------------
@@ -76,7 +86,7 @@
 .threeColumns {
 	margin-top:50px;
 	text-align:center;
-	margin-bottom:100px;
+	margin-bottom:30px;
 }
 #glownaBody {
 	background-image: url("../../images/body.jpg");
@@ -128,6 +138,8 @@
 	text-align:center;
 }
 
+
+
    /* --------------------------------------
 	LogIn.html & Registration.html
    -------------------------------------- */     
@@ -141,11 +153,11 @@
 }
 
 #zarejestrujBody {
-	background-color:	#B2DFEE;
+	background-image:	url("../../images/tlo2.png");	
 }
 
 #zalogujBody {
-	background-color:	#B2DFEE;
+	background-image:	url("../../images/tlo2.png");	
 }
 
 #loginForm {
@@ -173,7 +185,7 @@
    -------------------------------------- */     
 
 #artykulyBody{
-	background-image:	url("../../images/artykuly2.jpg");	
+	background-image:	url("../../images/art4.jpg");	
 }
 
 #artykulyBody h4{
@@ -216,6 +228,16 @@ p.btnInArticlesHide:hover {
 	margin-top:25px;
 }
 
+hr.hrCircle {
+	height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.9);
+}
+
+.articles {
+	margin-bottom:40px;
+}
+
  /* --------------------------------------
 	Categories.html
    -------------------------------------- */   
@@ -235,6 +257,10 @@ p.btnInArticlesHide:hover {
 	
 #categoriesSecond {
 	text-align:center;
+}
+
+#kategorieBody {
+	background-image:	url("../../images/art4.jpg");	
 }
 
 
@@ -384,7 +410,7 @@ a#upArray {
    right: 9px;
    width: 30px;
    height: 30px;
-   background: url('../../images/arrow2.png');
+   background: url('../../images/arrow2.png') no-repeat;
 }
 	
 a#upArray:hover {
