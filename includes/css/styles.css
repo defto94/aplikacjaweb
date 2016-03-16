@@ -138,8 +138,6 @@
 	text-align:center;
 }
 
-
-
    /* --------------------------------------
 	LogIn.html & Registration.html
    -------------------------------------- */     
@@ -171,15 +169,19 @@
 }
 
 #loginHeader {
-	margin-top:150px;
+	margin-top:30px;
 	text-align:center;
 }
-	
-#loginLink p {
-	margin-top:55px;
-	font-size:13px;
-	text-align:center;
+
+.modal-body{
+	background-image:	url("../../images/tlo2.png");	
 }
+
+.modal{
+	background-image:	url("../../images/glowna.jpg");	
+	overflow: hidden;
+}
+
  /* --------------------------------------
 	Articles.html
    -------------------------------------- */     

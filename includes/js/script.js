@@ -67,7 +67,20 @@ $(function() {
 	//popover
 	$(function () {
 		$('[data-toggle="popover"]').popover()
-	})
+	});
+	
+	
+	$('#myModal').on('shown.bs.modal', function () {
+		$('#inputEmailLog').focus()
+	});
+	
+	$('#myModal2').on('shown.bs.modal', function () {
+		$('#inputLoginLog').focus()
+	});
+	
+	
+	
+
 });
 	
 	
