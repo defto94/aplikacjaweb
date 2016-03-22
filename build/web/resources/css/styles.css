@@ -1,0 +1,482 @@
+  
+  /* --------------------------------------
+	Footer
+   -------------------------------------- */
+  
+  
+.headersInFooter {
+		color:#99ffcc;
+}
+
+  /* --------------------------------------
+	Contact.html
+   -------------------------------------- */
+   
+#inputMessage {
+	margin-bottom: 15px;
+}
+
+#kontaktBody {
+	background-image:	url("../../images/background.jpg");	
+}
+
+#contactFeatures {
+	margin-top:50px;
+}
+
+#secondColumnContact {
+	margin-bottom:20px;
+}
+
+#notesContact {
+	margin-down:40px;
+	font-size:15px;
+	color:black;
+}
+
+#formContact {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #FFFFFF;
+}
+
+#wellOfContactHead {
+	margin-top:30px;
+	background-color: rgba(65,105,225, 0.6);
+	color: #FFFFFF;
+	margin-bottom:50px;
+	
+}
+
+.glyphicon-phone{
+	font-size:50px;
+	padding-left:30px;
+	color:black;
+}
+
+.icons {
+	padding-top:30px;
+}
+.icons img {
+	padding-bottom:7px;
+}
+.popover {
+	background-color:#333;
+	color: white;
+}
+
+  /* --------------------------------------
+	Main.html
+   -------------------------------------- */
+
+.circle.findYou {
+	font-size: 75px;
+	color: #FFFFFF;
+	background-color:#333;
+}	
+	
+#photoLeft{
+	transition: all 0.3s ease 0s;
+}
+	
+#photoLeft:hover {
+	transform: scale(1.1);
+	cursor:default;
+}
+
+.threeColumns {
+	margin-top:50px;
+	text-align:center;
+	margin-bottom:30px;
+}
+#glownaBody {
+	background-image: url("../../images/body.jpg");
+}
+
+.headerColumns {
+	font-family: "Roboto";
+	font-weight: bold;
+	font-size: 22px;
+	display: block;
+	line-height: 70px;
+	color: #2197e0;	
+}
+
+.Text {
+	font-weight: 300px;
+	font-size:30px;
+	text-align:center;
+}
+	
+.TextSecondMain {
+	font-weight: 300px;
+	font-size:19px;
+	color: #5d5d5d;
+	margin-top:100px;
+	text-align:left;	
+	font-family: "Roboto";
+}
+	
+.first {
+	padding-top: 40px;
+	color: #2197e0;	
+}
+	
+.second {
+	color: #5d5d5d;
+	padding-bottom: 40px;
+}
+
+#mainNote {
+	margin-top:100px;
+	margin-bottom:100px;
+	text-align:center;
+	text-color: #2197e0;
+}
+
+#headerOfColumns {
+	margin-top:50px;
+	text-align:center;
+}
+
+   /* --------------------------------------
+	LogIn.html & Registration.html
+   -------------------------------------- */     
+#colorLine{ 
+	height: 5px;
+	border-top: 0;
+	background: #c4e17f;
+	border-radius: 5px;
+	background-image: linear-gradient(to left,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,
+	#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
+}
+
+#zarejestrujBody {
+	background-image:	url("../../images/tlo2.png");	
+}
+
+#zalogujBody {
+	background-image:	url("../../images/tlo2.png");	
+}
+
+#loginForm {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+#btnRegistration {
+	margin-top:20px;
+	margin-bottom:15px;
+}
+
+#loginHeader {
+	margin-top:30px;
+	text-align:center;
+}
+
+.modal-body{
+	background-image:	url("../../images/tlo2.png");	
+}
+
+.modal{
+	background-image:	url("../../images/glowna.jpg");	
+	overflow: hidden;
+}
+
+ /* --------------------------------------
+	Articles.html
+   -------------------------------------- */     
+
+#artykulyBody{
+	background-image:	url("../../images/art4.jpg");	
+}
+
+#artykulyBody h4{
+	margin-top:70px;
+	font-size:25px;
+	color: #500000;
+}
+
+.wellsInArticles {
+	background-color: rgba(1, 1, 1, 0.1);
+	border-style: none;
+}
+
+.wellsInArticles img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+p.btnInArticlesShow,
+p.btnInArticlesHide{
+	background-color: rgba(1, 1, 1, 0.0);
+	border-style: none;
+	color: #333;
+	font-weight:bold;
+	letter-spacing: 1px;
+}
+
+p.btnInArticlesShow:hover,
+p.btnInArticlesHide:hover {
+	background-color: rgba(1, 1, 1, 0.0);
+	border-style: none;
+	color: #333;
+	font-weight:bold;
+	color: #8d8d8d;
+}
+
+.entryText {
+	font-size: 17px;
+	margin-top:25px;
+}
+
+hr.hrCircle {
+	height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.9);
+}
+
+.articles {
+	margin-bottom:40px;
+}
+
+ /* --------------------------------------
+	Categories.html
+   -------------------------------------- */   
+	
+#categories {
+	margin-top: 150px;
+	text-align:center;
+}
+	
+#categories img, 
+#categoriesSecond img{
+	padding-top:10px;
+	padding-bottom:13px;
+	margin-top:23px;
+	margin-bottom:33px;		
+}
+	
+#categoriesSecond {
+	text-align:center;
+}
+
+#kategorieBody {
+	background-image:	url("../../images/art4.jpg");	
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+  
+.navbar-default {
+	background-color:#2a2a2a;
+	border-color: #FFFFFF;
+	font-weight:bold;
+	letter-spacing: 1px;
+}
+  
+.navbar-brand {
+	padding: 1px 15px;
+	padding-right:80px;
+}
+   
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #FFFFFF;
+	font-weight:bold;
+	background-color:transparent;
+}
+	
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus 
+{
+	background-color: #0e0e0e;
+	color: #FFFFFF;
+}
+	
+.slash {
+	margin-top:15px;
+	margin-left:5px;
+	margin-right:5px;
+	color: #8d8d8d;
+}
+
+.nav-tabs a {
+	color: #5d5d5d;
+}
+
+
+ 
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+   
+#myCarousel {
+	margin-top:60px;
+}
+.carousel-caption {
+	padding-top: 20px;
+	font-size:25px;
+	font-weight: bold;
+	color: black;
+	padding-bottom:220px;
+}
+
+.slide3Text {
+	color:#FFFFFF;
+}
+
+#myCarousel .item {
+	height:400px;
+}
+	
+#slide1 {
+	background: url('../../images/karuzela/warzywaSrednie.jpg') top left no-repeat;
+}
+
+#slide2 {
+	background: url('../../images/karuzela/przepisSredni.jpg') top left no-repeat;
+}
+
+#slide3 {
+	background: url('../../images/karuzela/przepisySrednie.jpg') top left no-repeat;
+}
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+body {
+	-webkit-front-smoothing: antialased;
+	text-rendering: optimizelegibility;
+	background-color: #ffffcc;
+	background-color:#9e9e9e;
+}
+	
+.well {
+	margin:0px;
+}
+	
+.well h1 {
+	margin: 0px;
+}
+	
+.alert {
+	margin-top: 10px;
+	display:none;
+}
+	
+.dropdown-menu {
+	background-color:#333;
+}
+	
+.dropdown-menu li a {
+	color:#FFFFFF;
+}
+
+.panel {
+	background-color: rgba(0, 0, 0, 0.6);
+	color:#FFFFFF;
+}
+	
+footer {
+	background: #333;
+	color:#eee;
+	font-size: 12px;
+	padding: 20px;
+}
+
+.circle {
+	margin-top:70px;
+	margin-bottom:20px;
+	padding-top:55px;
+	padding-left:33px;
+	padding-right:30px;
+	padding-bottom:40px;
+	border-radius: 50%;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #C8C8C8;
+	transition: all 0.3s ease 0s;
+}
+
+.circle:hover {
+	transform: scale(1.1);
+	cursor:default;
+}
+
+a#upArray {
+   position: fixed;
+   bottom: 9px;
+   right: 9px;
+   width: 30px;
+   height: 30px;
+   background: url('../../images/arrow2.png') no-repeat;
+}
+	
+a#upArray:hover {
+	height: 45px;
+}	
+	
+ul.unstyled {
+	list-style:none;
+	padding:0;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	#myCarousel .item {
+	height:310px;
+	}
+	
+	#slide1 {
+	background: url('../../images/karuzela/warzywaMale.jpg') top left no-repeat;
+	}
+
+	#slide2 {
+	background: url('../../images/karuzela/przepisMaly.jpg') top left no-repeat;
+	}
+
+	#slide3 {
+		background: url('../../images/karuzela/przepisyMale.jpg') top left no-repeat;
+	}
+	
+	.carousel-caption {
+		font-size: 16px;
+	}
+	
+	.carousel-caption h4{
+		font-size: 22px;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	#myCarousel .item {
+	height:500px;
+	}
+	
+	#slide1 {
+		background: url('../../images/karuzela/warzywaDuze.jpg') top left no-repeat;
+	}
+
+	#slide2 {
+		background: url('../../images/karuzela/przepisDuzy.jpg') top left no-repeat;
+	}
+
+	#slide3 {
+		background: url('../../images/karuzela/przepisyDuze.jpg') top left no-repeat;
+	}
+}
+

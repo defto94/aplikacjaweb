@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet library = "css" name="/bootstrap-glyphicons.css"/>
+        <h:outputStylesheet library = "css" name="/styles.css"/>
+        <h:outputStylesheet library = "css" name="/bootstrap.min.css"/>
+        
+        <title>navbar</title>
+    </h:head>
+
+    <h:body>
+        <header>
+       	<div class = "navbar-default navbar-fixed-top" role="navigation"> 
+            <div class = "container"> 
+
+                <button class = "navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle = "collapse" type = "button"> 
+                    <span class = "icon-bar"> </span>
+                    <span class = "icon-bar"> </span>
+                    <span class = "icon-bar"> </span>
+                    <span class = "icon-bar"> </span>
+                </button>
+
+                <a class="navbar-brand" href="glowna.html"> 
+                    <h:graphicImage value="/images/logo.png"/>
+                </a>
+
+                <div class = "nav-collapse collapse navbar-responsive-collapse"> 
+                    <ul class = "nav navbar-nav pull-left">
+                        <li>
+                            <a href = "glowna.html" id= "glowna">START</a>
+                        </li>
+                        <li>
+                            <div class = "slash"> / </div>
+                        </li>
+                        <li>
+                            <a href = "artykuly.html">ZDROWIE</a>
+                        </li>
+                        <li>
+                            <div class = "slash"> / </div>
+                        </li>
+                        <li class = "dropdown">
+                            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">PRZEPISY <strong class = "caret"> </strong> </a>
+                            <ul class = "dropdown-menu">
+                                <li>
+                                    <a href = "kategorie.html">Wszystkie kategorie</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                   <a href = "kategorie.html">Zupy</a>
+                                </li>
+                                <li>
+                                    <a href = "kategorie.html">Sałatki</a>
+                                </li>
+                                <li>
+                                   <a href = "kategorie.html">Ciasta</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li>
+                        <div class = "slash"> / </div>
+                    </li>
+                    <li>
+                        <a href = "kontakt.html">KONTAKT</a>
+                    </li>
+                    </ul>
+                    <ul class = "nav navbar-nav pull-right">
+                        <li class = "dropdown">
+                        <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"><span class = "glyphicon glyphicon-user"> </span>LOGOWANIE<strong class = "caret"></strong></a>
+                            <ul class = "dropdown-menu">
+                                <li>
+                                    <a href="#myModal" data-toggle="modal" ><span class = "glyphicon glyphicon-edit"></span> Zaloguj się</a>
+                                </li>
+                                <li>
+                                    <a href="#myModal2" data-toggle="modal"><span class = "glyphicon glyphicon-plus"></span> Zarejestruj się</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+	</div> <!--end navbar-->
+       </header> 
+        <h:outputScript library="js" name="bootstrap.min.js" />
+        <h:outputScript library="js" name="jquery-1.8.2.min.js" />
+        <h:outputScript library="js" name="script.js" />
+        <h:outputScript library="js" name="modernizr-2.6.2.min.js" />
+        
+    </h:body>
+</html>
