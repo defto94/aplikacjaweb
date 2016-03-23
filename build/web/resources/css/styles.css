@@ -40,11 +40,10 @@
 }
 
 #wellOfContactHead {
-	margin-top:30px;
+	margin-top:25px;
 	background-color: rgba(65,105,225, 0.6);
 	color: #FFFFFF;
 	margin-bottom:50px;
-	
 }
 
 .glyphicon-phone{
@@ -187,7 +186,7 @@
    -------------------------------------- */     
 
 #artykulyBody{
-	background-image:	url("../../images/art4.jpg");	
+	background-image:	url("../../images/background.jpg");	
 }
 
 #artykulyBody h4{
@@ -197,7 +196,7 @@
 }
 
 .wellsInArticles {
-	background-color: rgba(1, 1, 1, 0.1);
+	background-color: rgba(1, 1, 1, 0.1)!important;
 	border-style: none;
 }
 
@@ -262,7 +261,7 @@ hr.hrCircle {
 }
 
 #kategorieBody {
-	background-image:	url("../../images/art4.jpg");	
+	background-image:	url("../../images/background.jpg");	
 }
 
 
@@ -334,15 +333,15 @@ hr.hrCircle {
 }
 	
 #slide1 {
-	background: url('../../images/karuzela/warzywaSrednie.jpg') top left no-repeat;
+	background-image: url('../../images/carousel/warzywaSrednie.jpg') top left no-repeat;
 }
 
 #slide2 {
-	background: url('../../images/karuzela/przepisSredni.jpg') top left no-repeat;
+	background-image: url('../../images/carousel/przepisSredni.jpg') top left no-repeat;
 }
 
 #slide3 {
-	background: url('../../images/karuzela/przepisySrednie.jpg') top left no-repeat;
+	background-image: url('../../images/carousel/przepisySrednie.jpg') top left no-repeat;
 }
 
 /* --------------------------------------
@@ -377,7 +376,7 @@ body {
 }
 
 .panel {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.6)!important;
 	color:#FFFFFF;
 }
 	
@@ -414,7 +413,7 @@ a#upArray {
    right: 9px;
    width: 30px;
    height: 30px;
-   background: url('../../images/arrow2.png') no-repeat;
+   background: url('../../images/arrow.png') no-repeat;
 }
 	
 a#upArray:hover {
@@ -441,15 +440,15 @@ ul.unstyled {
 	}
 	
 	#slide1 {
-	background: url('../../images/karuzela/warzywaMale.jpg') top left no-repeat;
+            background-image: url('../../images/carousel/warzywaMale.jpg') top left no-repeat;
 	}
 
 	#slide2 {
-	background: url('../../images/karuzela/przepisMaly.jpg') top left no-repeat;
+            background-image: url('../../images/carousel/przepisMaly.jpg') top left no-repeat;
 	}
 
 	#slide3 {
-		background: url('../../images/karuzela/przepisyMale.jpg') top left no-repeat;
+            background-image: url('../../images/carousel/przepisyMale.jpg') top left no-repeat;
 	}
 	
 	.carousel-caption {
@@ -468,15 +467,15 @@ ul.unstyled {
 	}
 	
 	#slide1 {
-		background: url('../../images/karuzela/warzywaDuze.jpg') top left no-repeat;
+		background: url('../../images/carousel/warzywaDuze.jpg') top left no-repeat;
 	}
 
 	#slide2 {
-		background: url('../../images/karuzela/przepisDuzy.jpg') top left no-repeat;
+		background: url('../../images/carousel/przepisDuzy.jpg') top left no-repeat;
 	}
 
 	#slide3 {
-		background: url('../../images/karuzela/przepisyDuze.jpg') top left no-repeat;
+		background: url('../../images/carousel/przepisyDuze.jpg') top left no-repeat;
 	}
 }
 

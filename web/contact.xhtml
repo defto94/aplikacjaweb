@@ -3,7 +3,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
-
+    
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet library = "css" name="/bootstrap-glyphicons.css"/>
+        <h:outputStylesheet library = "css" name="/styles.css"/>
+        <h:outputStylesheet library = "css" name="/bootstrap.min.css"/>
+        
+        <title>navbar</title>
+    </h:head>
     <body  id = "kontaktBody">
         <div id="header">
             <ui:insert name="header" >
@@ -55,21 +63,21 @@
                             <div class ="form-group">
                                 <label class="col-lg-3 control-label" for="inputName">Imię i nazwisko</label>
                                 <div class = "col-lg-9">
-                                    <h:inputText value="#{userController.user.username}" />
+                                    <h:inputText value="#{userController.user.username}" class = "form-control" id = "inputName"/>
                                 </div>
                             </div>
 							
                             <div class ="form-group">
                                 <label class="col-lg-3 control-label" for="inputEmail">Adres email</label>
                                 <div class = "col-lg-9">
-                                    <h:inputText value="#{userController.user.username}" />
+                                    <h:inputText value="#{userController.user.username}" class = "form-control" id = "inputEmail" />
                                 </div>
                             </div>
 							
                             <div class ="form-group">
                                 <label class="col-lg-3 control-label" for="inputTheme">Temat</label>
                                     <div class = "col-lg-9">
-                                        <h:inputText value="#{userController.user.username}" />
+                                        <h:inputText value="#{userController.user.username}" class = "form-control" id = "inputTheme"/>
                                     </div>
                             </div>
 							
