@@ -6,13 +6,10 @@
     
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <h:outputStylesheet library = "css" name="/bootstrap-glyphicons.css"/>
-        <h:outputStylesheet library = "css" name="/styles.css"/>
-        <h:outputStylesheet library = "css" name="/bootstrap.min.css"/>
         
         <title>navbar</title>
     </h:head>
-    <body  id = "kontaktBody">
+    <h:body  id = "kontaktBody">
         <div id="header">
             <ui:insert name="header" >
 		<ui:include src="navbar.xhtml" />
@@ -43,16 +40,16 @@
             <div class  = "row" id = "contactFeatures">
 		<div class = "col-sm-1 icons"></div>
                 <div class = "col-sm-4 icons">
-                    <a href="https://www.facebook.com/ola.srutkowska" target="_blank" data-toggle="popover" data-trigger="hover" data-content="Mój profil na Facebook'u">
+                    <a href="https://www.facebook.com/ola.srutkowska" target="_blank" data-toggle="popover" placement="right" data-trigger="hover" data-content="Mój profil na Facebook'u">
                     <h:graphicImage value="/images/icons/facebook.png"/></a><br/>
 					
-                    <a href="mailto:defto94@gmail.com" data-toggle="popover" data-trigger="hover" data-content="Współpraca:  wspolpraca@zebyzdrowozyc.pl">
+                    <a href="mailto:defto94@gmail.com" data-toggle="popover" data-trigger="hover" placement="right" data-title="Współpraca:" data-content=" wspolpraca@zebyzdrowozyc.pl">
                     <h:graphicImage value="/images/icons/gmail.png"/></a><br/>
 					
-                    <a href="https://plus.google.com/102869232477597552762/posts" target="_blank" data-toggle="popover" data-trigger="hover" data-content="Mój profil na Google+">
+                    <a href="https://plus.google.com/102869232477597552762/posts" target="_blank" data-toggle="popover" data-trigger="hover" placement="right" data-content="Mój profil na Google+">
                     <h:graphicImage value="/images/icons/google.png"/></a><br/>
 					
-                    <a href="mailto:defto94@gmail.com" data-toggle="popover" data-trigger="hover"  data-content="Pytania i uwagi: administracja@zebyzdrowozyc.pl">
+                    <a href="mailto:defto94@gmail.com" data-toggle="popover" data-trigger="hover"  placement="right" data-title="Pytania i uwagi:" data-content="administracja@zebyzdrowozyc.pl">
                     <h:graphicImage value="/images/icons/gmail.png"/></a><br/>
 					
                 </div>
@@ -104,6 +101,7 @@
             <ui:insert name="footer" >
                 <ui:include src="footer.xhtml" />
 	    </ui:insert>
+      
     	</div>
-    </body>
+    </h:body>
 </html>
