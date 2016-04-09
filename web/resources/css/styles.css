@@ -68,7 +68,24 @@
 	font-size: 75px;
 	color: #FFFFFF;
 	background-color:#333;
-}	
+}
+.circle.firstCircle {
+    background-image: url("../../images/icons/list.png");
+    
+}
+
+.circle.secondCircle {
+    background-image: url("../../images/icons/clock.png")  ;
+    padding-left:120px;
+    margin: 0 auto;
+    
+}
+
+.circle.thirdCircle {
+    background-image: url("../../images/icons/like.png")  ;
+   
+    
+}
 	
 #photoLeft{
 	transition: all 0.3s ease 0s;
@@ -170,9 +187,9 @@
 }
 
 .modal-body{
-	background-image:	url("../../images/tlo2.png");	
+	background-image:	url("../../images/modalBackground.png");	
 }
-
+/*poki co modal background bez zmian*/
 .modal{
 	background-image:	url("../../images/glowna.jpg");	
 	overflow: hidden;
@@ -183,7 +200,7 @@
    -------------------------------------- */     
 
 #artykulyBody{
-	background-image:	url("../../images/background.jpg");	
+	background-image: url("../../images/background.jpg");	
 }
 
 #artykulyBody h4{
@@ -258,7 +275,8 @@ hr.hrCircle {
 }
 
 #kategorieBody {
-	background-image:	url("../../images/background.jpg");	
+	image:	url("../../images/background.jpg") no-repeat;
+        
 }
 
 

@@ -33,8 +33,9 @@
                             <li> <a href="main.xhtml">Start </a></li>
                             <li> <a href="articles.xhtml">Artykuły </a></li>
                             <li> <a href="categories.xhtml">Przepisy </a></li>
-                            <li> <a href="zaloguj.html">Zaloguj się </a></li>
-                            <li> <a href="zarejestruj.html">Dołącz do nas! </a></li>
+                            <li> <a data-toggle="modal" href="#myModal">Zaloguj się </a></li>
+                            
+                            <li> <a data-toggle="modal" href="#myModal2">Dołącz do nas! </a></li>
 			</ul>
                     </div> <!--div end col sm 2-->
 				
@@ -47,5 +48,15 @@
 		</div> <!--end row-->
             </div>
         </footer>
+        <div id="modal">
+            <ui:insert name="modal" >
+                <ui:include src="modal.xhtml" />
+	    </ui:insert>
+        </div>
+        <div id="modal">
+            <ui:insert name="modal" >
+                <ui:include src="modalRegistration.xhtml" />
+	    </ui:insert>
+        </div>
     </h:body> 
 </html>
