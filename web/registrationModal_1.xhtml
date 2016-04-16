@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Facelets Template</title>
+    </h:head>
+
+    <h:body>
+        <f:view>
+            
+        <h:form id="create">  
+            <div class = "modal fade" id = "myModal2">
+			<div class = "modal-dialog">
+				<div class = "modal-content">
+					<div class = "modal-body">
+						<button class = "close" data-dismiss="modal">&times;</button> 
+							<div class = "row" id="loginHeader"> 
+								<span class = "Text second"> Załóż konto </span> <br/>
+								<hr id = "colorLine"/>
+								<div class = "col-sm-3"></div> <!--martwy odstęp-->
+								<div class = "col-sm-9" id="loginForm">	
+										<div class ="form-group">
+											<div class = "col-lg-8">
+												<div class = "input-group">
+													<span class = "input-group-addon glyphicon glyphicon-user"></span>
+                                                                                                        Login: <h:inputText id="flogin"       
+                                                                                                                                 requiredMessage="*"
+                                                                                                                                 value="#{registrationController.user.login}"
+                                                                                                                                 required="true"/>   
+                                                                                                        
+                                                                                                        Mail <h:inputText id="fmail"       
+                                                                                                                                 requiredMessage="*"
+                                                                                                                                 value="#{registrationController.user.mail}"
+                                                                                                                                 required="true"/>  
+                                                                                                        
+                                                                                                        Password1 <h:inputText id="fpassword1"       
+                                                                                                                                 requiredMessage="*"
+                                                                                                                                 value="#{registrationController.user.password1}"
+                                                                                                                                 required="true"/>  
+                                                                                                        
+                                                                                                        Password2 <h:inputText id="fpassword2"       
+                                                                                                                                 requiredMessage="*"
+                                                                                                                                 value="#{registrationController.user.password2}"
+                                                                                                                                 required="true"/>  
+                                                                                                        
+                                                                                                        <h:commandButton id="submit" 
+                                                                                                            value="Create"
+                                                                                                            action="#{registrationController.createUser}"/>
+                                                                                                        
+                                                                                                        
+                                                                                                        <h:messages style="color: red" globalOnly="true"/>
+												</div>
+											</div>
+										</div>
+
+											</div>
+                                                                
+										</div>
+								
+								</div> <!--end col-sm-6-->
+							</div> <!--end  row-1-->
+					</div>
+				</div>
+        </h:form>
+        </f:view>
+    </h:body>
+
+</html>
