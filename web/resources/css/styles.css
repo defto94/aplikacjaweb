@@ -122,7 +122,7 @@
     text-align:center;
     margin-bottom:30px;
 }
-#glownaBody {
+#glownaBody, #bmiBody {
     background-image: url("../../images/body.jpg");
 }
 
@@ -175,6 +175,10 @@
 /* --------------------------------------
      LogIn.html & Registration.html
 -------------------------------------- */     
+.thinkerPhoto {
+    
+    float: right;
+}
 #colorLine{ 
     height: 5px;
     border-top: 0;

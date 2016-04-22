@@ -22,12 +22,13 @@
                             <hr id = "colorLine"/>
                             <div class = "col-sm-3"></div> <!--martwy odstęp-->
                             <div class = "col-sm-9" id="loginForm">	
-                                <form class="form-horizontal">
+                                <form class="form-horizontal" id="BMIform">
                                     <div class ="form-group">	
                                         <div class = "col-lg-8">				
                                             <div class = "input-group"> <!--klasa dzięki której wyświetla się po lewej stronie człowiek -->
                                                 <span class = "input-group-addon glyphicon glyphicon-envelope"></span>
-                                                <h:inputText  value="#{userController.user.username}"  class = "form-control" label="username" id = "inputEmailLog" p:placeholder="Masa ciała "/>
+                                                <h:inputText class = "form-control" value="#{bmi.weight}" id = "inputWeight" p:placeholder="Masa ciała "/>
+                                                <h:message for="inputWeight"/> 
                                             </div>
                                         </div>
                                     </div>	
@@ -36,14 +37,19 @@
                                             <div class = "input-group">
                                                 <span class = "input-group-addon glyphicon glyphicon-lock"></span>
 
-                                                <h:inputText value="#{userController.user.username}" class = "form-control" id = "inputPasswordLog" p:placeholder="Wzrost " />
-                                            </div>
-                                            <div class="checkbox">
+                                                <h:inputText required="true" value="#{bmi.height}" requiredMessage="Proszę wpisać wzrost!" class = "form-control" id ="inputHeight" p:placeholder="Wzrost "/>
+                                                <h:message for="inputHeight"/> 
 
                                             </div>
-                                            <button class = "btn btn-warning  col-sm-12" type= "submit">Oblicz</button>
+                                            <div class="checkbox">
+                                            </div>
+                                            <h:commandButton  action="#{bmi.calculate()}" onclick = "BMI()" type="submit"  id="sendAlert" class = "btn btn-warning  col-sm-12" value="Oblicz"/>
+                                            <h:outputText value="#{bmi.result}" escape="false" />
+                         
                                         </div>
+                                        
                                     </div>
+                                    <h:graphicImage value="/images/thinker.png" styleClass="thinkerPhoto" onmouseover = "info" alt = "Thinker"/>
                                 </form>				
                             </div> <!--end col-sm-6-->
                         </div> <!--end  row-1-->

@@ -88,18 +88,16 @@
                                 <div class = "col-lg-9">
                                     <h:inputTextarea   required="true"  requiredMessage="Proszę uzupełnić treść!" value="#{mail.contain}"  class = "form-control" id = "inputMessage" label = "inputMessage" cols= "4"  rows = "4"/> 
                                     <h:messages for="inputMessage"/> 
-                                    <h:commandButton actionListener="#{mail.sendMail}"  type="submit"  class = "btn btn-info pull-right contactButton" value="Wyślij!"/>
+                                    <h:commandButton actionListener="#{mail.sendMail}"   type="submit"  id="sendAlert" class = "btn btn-info pull-right contactButton" value="Wyślij!"/>
 
                                 </div>
                             </div>
 
                         </h:form>
                     </div>
-                    <div class="alert alert-success alert-block fade in" id = "successAlert">
-
-                        <button type = "button" class = "close" data-dismiss = "alert">&times;</button>
-                        <h4>Wysłano!</h4>
-                        <p>Twoja wiadomość została wysłana. Wkrótce otrzymasz odpowiedź.</p>
+                    <div class="alert alert-success alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        Success! message sent successfully.
                     </div>
                 </div>
             </div>

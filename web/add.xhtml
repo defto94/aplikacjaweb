@@ -79,7 +79,14 @@
                             <label class="col-lg-3 control-label" for="inputMessage">Przepis</label>
                             <div class = "col-lg-9">
                                 <textarea class = "form-control" id = "inputMessage"  rows = "20"> </textarea> 
-                                <button class = "btn btn-info pull-right" type= "submit" id="sendAlert">Wyślij!</button>
+
+                                <h:commandButton type="submit" id ="sendAlert" class = "btn btn-info pull-right" value="Wyślij!"/>
+
+                                <div class="alert alert-success alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    Success! message sent successfully.
+                                </div>
+
                             </div>
                         </div>
 
