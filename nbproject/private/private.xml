@@ -3,14 +3,27 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/WebApplication/web/index.xhtml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/WebApplication/web/META-INF/context.xml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/WebApplication/web/registrationModal.xhtml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/WebApplication/src/java/entity/Registration.java</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/WebApplication/src/conf/MANIFEST.MF</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/WebApplication/src/java/controller/RegistrationBean.java</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/WebApplication/src/java/config/DBManager.java</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/WebApplication/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/soup.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/login.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/navbar.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/categories.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/src/java/sendingMail/Mail.java</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/cake.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/dessert.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/resources/css/styles.css</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/add.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/salad.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/articles.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/main.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/breakfast.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/resources/js/script.js</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/index.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/contact.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/second.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/modalRegistration.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/registrationOutput.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/footer.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/modal.xhtml</file>
         </group>
     </open-files>
 </project-private>

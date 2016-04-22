@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <h:head>
+
+        <title>navbar</title>
+    </h:head>
+    <h:body id = "artykulyBody">
+
+        <div id="header">
+            <ui:insert name="header" >
+                <ui:include src="navbar.xhtml" />
+            </ui:insert>
+        </div>
+        <div class = "container" id="myContainer">
+            <div class="row">
+                <div class = "container">
+                    <h:graphicImage value="/images/przepisy.jpg" class="img-responsive"/>
+                </div>
+            </div>
+
+            <div class = "row" id = "categories">
+
+                <div class = "col-sm-4 categrory">
+                    <div class = "panel">
+                        <h3 class = "panel-title">Zupy</h3>
+                        <h:graphicImage value="/images/soup.jpg" alt = "soup" class = "img-thumbnail"/>
+                        <p>Zupy krem to doskonały pomysł na pożywne i rozgrzewające danie w chłodne popołudnia. </p>
+
+                        <a href ="soup.xhtml" class ="btn btn-warning btn-block"> Zupy </a>
+                    </div> <!--end panel"-->
+                </div> <!--end category"-->
+
+                <div class = "col-sm-4 categrory">
+                    <div class = "panel">
+                        <h3 class = "panel-title">Sałatki</h3>
+                        <h:graphicImage value="/images/salatki.jpg" alt = "soup" class = "img-thumbnail"/>
+
+                        <p>Zupy krem to doskonały pomysł na pożywne i rozgrzewające danie w chłodne popołudnia. </p>
+
+                        <a href ="salad.xhtml" class ="btn btn-warning btn-block"> Sałatki</a>
+                    </div> 
+                </div> 
+
+
+                <div class = "col-sm-4 categrory">
+                    <div class = "panel">
+                        <h3 class = "panel-title">Desery</h3>
+                        <h:graphicImage value="/images/deser.jpg" alt = "soup" class = "img-thumbnail"/>
+                        <p>Zupy krem to doskonały pomysł na pożywne i rozgrzewające danie w chłodne popołudnia. </p>
+
+                        <a href ="dessert.xhtml" class ="btn btn-warning btn-block"> Desery </a>
+                    </div> <!--end panel"-->
+                </div> <!--end category"-->
+
+            </div> <!--end categories-->
+
+            <div class = "row" id = "categoriesSecond">
+                <div class = "col-sm-2 categrory"></div>
+                <div class = "col-sm-4 categrory">
+                    <div class = "panel">
+                        <h3 class = "panel-title">Drugie dania</h3>
+
+                        <h:graphicImage value="/images/obiady.jpg" alt = "soup" class = "img-thumbnail"/>
+                        <p>Zupy krem to doskonały pomysł na pożywne i rozgrzewające danie w chłodne popołudnia. </p>
+
+                        <a href ="second.xhtml" class ="btn btn-warning btn-block"> Drugie dania </a>
+                    </div> <!--end panel"-->
+                </div>
+
+                <div class = "col-sm-4 categrory">
+                    <div class = "panel">
+                        <h3 class = "panel-title">Śniadania</h3>
+
+                        <h:graphicImage value="/images/sniadanie.jpg" alt = "soup" class = "img-thumbnail"/>
+                        <p>Zupy krem to doskonały pomysł na pożywne i rozgrzewające danie w chłodne popołudnia. </p>
+
+                        <a href ="breakfast.xhtml" class ="btn btn-warning btn-block"> Śniadania </a>
+                    </div> <!--end panel"-->
+                </div>
+            </div> <!--end container-->
+        </div>
+
+        <div id="footer">
+            <ui:insert name="footer" >
+                <ui:include src="footer.xhtml" />
+            </ui:insert>
+        </div>
+
+    </h:body>
+
+</html>

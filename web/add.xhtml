@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <h:head>
+
+        <title>navbar</title>
+    </h:head>
+    <h:body id = "artykulyBody">
+
+        <div id="header">
+            <ui:insert name="header" >
+                <ui:include src="navbar.xhtml" />
+            </ui:insert>
+        </div>
+
+        <div class = "container" id="myContainer">
+
+
+            <div class = "col-sm-12" id="loginForm">
+                <div class = "well" id="formAdd">
+                    <div class = "col-sm-6">
+                        <span class = "Text second"> Podziel się z nami swoim pomysłem </span> <br/>
+                        <hr id = "colorLine"/>
+                        Wyślij swój przepis, a my po weryfikacji zamieścimy go na stronie.
+                    </div>
+                    <div class = "col-sm-2"></div>
+                    <div class = "col-sm-4">
+                        <h:graphicImage value="/images/recipe.png" alt = "recipe"/>	
+                        <hr id = "colorLine"/>
+                    </div>    
+
+                    <form class="form-horizontal">
+
+                        <div class ="form-group">
+                            <label class="col-lg-3 control-label" for="inputName">Imię i nazwisko</label>
+                            <div class = "col-lg-9">
+                                <h:inputText value="#{userController.user.username}" class = "form-control col-lg-3" id = "inputName"/>
+                            </div>
+                        </div>
+
+                        <div class ="form-group">
+                            <label class="col-lg-3 control-label" for="inputEmail">Adres e-mail</label>
+                            <div class = "col-lg-9">
+                                <h:inputText value="#{userController.user.username}" class = "form-control" id = "inputEmail" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Wybierz kategorię</label>
+                            <div class="col-lg-9 selectContainer">
+                                <select class="form-control" name="category">
+                                    <option value=""></option>
+                                    <option value="Zupa">Zupa</option>
+                                    <option value="Sałatka">Sałatka</option>
+                                    <option value="Deser">Deser</option>
+                                    <option value="Drugie danie">Drugie danie</option>
+                                    <option value="Śniadanie">Śniadanie</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="file">Wybierz zdjęcie</label>
+                            <input type="file"  name="file" id="file" class="inputFile"/>
+                        </div>
+
+                        <div class ="form-group">
+                            <label class="col-lg-3 control-label" for="inputMessage">Składniki</label>
+                            <div class = "col-lg-9">
+                                <textarea class = "form-control" id = "inputMessage"  rows = "4"> </textarea> 
+
+                            </div>
+                        </div>
+
+
+                        <div class ="form-group">
+                            <label class="col-lg-3 control-label" for="inputMessage">Przepis</label>
+                            <div class = "col-lg-9">
+                                <textarea class = "form-control" id = "inputMessage"  rows = "20"> </textarea> 
+                                <button class = "btn btn-info pull-right" type= "submit" id="sendAlert">Wyślij!</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <ui:insert name="footer" >
+                <ui:include src="footer.xhtml" />
+            </ui:insert>
+        </div>
+
+    </h:body>
+
+</html>

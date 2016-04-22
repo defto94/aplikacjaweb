@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <div class = "modal fade" id = "myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">>
+        <div class = "modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-body">
+                    <button class = "close" data-dismiss="modal">x</button> 
+                    <div class = "row" id="loginHeader"> 
+                        <span class = "Text second"> Witaj z powrotem! </span> <br/>
+                        <hr id = "colorLine"/>
+                        <div class = "col-sm-3"></div> <!--martwy odstęp-->
+                        <div class = "col-sm-9" id="loginForm">	
+                            <form class="form-horizontal">
+                                <div class ="form-group">	
+                                    <div class = "col-lg-8">				
+                                        <div class = "input-group"> <!--klasa dzięki której wyświetla się po lewej stronie człowiek -->
+                                            <span class = "input-group-addon glyphicon glyphicon-envelope"></span>
+
+                                            <h:inputText value="#{alert}" class = "form-control" id = "inputEmailLog"/>
+                                        </div>
+                                    </div>
+                                </div>	
+                                <div class ="form-group">
+                                    <div class = "col-lg-8">
+                                        <div class = "input-group">
+                                            <span class = "input-group-addon glyphicon glyphicon-lock"></span>
+                                            <h:inputSecret value="#{userController.user.username}" rendered="#{alert.submit()}" class = "form-control" id = "inputPasswordLog"/>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"/> Zapamiętaj mnie	
+                                            </label>
+                                        </div>
+
+                                        <h:commandButton onclick="alert()"  action="#{alert.submit()}" type="button" id ="sendAlert" class = "btn btn-warning  col-sm-12" value="Oblicz"/>
+                                    </div>
+                                </div>
+                            </form>				
+                        </div> <!--end col-sm-6-->
+
+
+                    </div> <!--end  row-1-->
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

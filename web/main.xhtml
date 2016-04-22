@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <body  id = "glownaBody">
+        <div id="header">
+            <ui:insert name="header" >
+                <ui:include src="navbar.xhtml" />
+            </ui:insert>
+        </div>
+        <div class = "container" id="myContainer">
+            <div class = "carousel slide" id="myCarousel">
+
+                <!--wskazówki trzy kółeczka-->
+                <ol class = "carousel-indicators">
+                    <li class = "active" data-slide-to="0" data-target="#myCarousel"></li>
+                    <li data-slide-to="1" data-target="#myCarousel"></li>
+                    <li data-slide-to="2" data-target="#myCarousel"></li>
+                </ol>
+
+                <!--nakładka na zjdęcia, 3 "SLAJDY"-->
+                <div class = "carousel-inner">
+                    <div class = "item active" id="slide1">
+                        <div class = "carousel-caption"> 
+                            <h1> Czy zdrowe jedzenie może być dobre?</h1>
+                        </div> 
+                    </div> 
+
+                    <div class = "item" id= "slide2">
+                        <div class = "carousel-caption"> <!--do fajnego wyświetlania tekstu na karuzeli-->
+                            <h3>Załóż konto i podziel się z nami swoim dietetycznym przepisem!</h3>
+                        </div> 
+                    </div> 
+
+                    <div class = "item" id="slide3">
+                        <div class = "carousel-caption slide3Text"> <!--do fajnego wyświetlania tekstu na karuzeli-->
+                            <h3> Zobacz które danie jest numerem jeden według użytkowników!</h3>
+                        </div> <!--end div carousel-caption"-->
+                    </div> <!--item-->
+
+                </div> <!--end carousel inner-->
+
+                <!--strzałka w lewo i w prawo-->
+                <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class = "icon-prev"> </span></a>
+                <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class = "icon-next"> </span></a>
+
+            </div> <!--end carousel-->
+
+
+            <div class = "row" id="headerOfColumns"> 
+                <span class = "Text first"> Potrzebujesz zmian? Chciałbyś rozpocząć zdrowy tryb życia ale nie masz odwagi? </span> <br/>
+                <span class = "Text second"> Nic prostszego! <br/>Porady, przepisy oraz wsparcie masz na wyciągnięcie ręki.</span>
+            </div> <!--end  row-2-->
+
+            <div class = "row threeColumns"> 
+                <div class = "col-sm-4 feature"> <!--first column-->
+                    <div class = "circle findYou firstCircle">
+                    </div>
+                    <span class = "headerColumns">WYZNACZ CEL</span>
+                </div> <!-- end third column-->
+
+                <div class = "col-sm-4 feature"> <!--first column-->
+
+                    <div class = "circle findYou secondCircle">
+                    </div>
+                    <span class = "headerColumns">BĄDŹ KONSEKWENTNY</span>	
+                </div> <!-- end third column-->
+
+
+                <div class = "col-sm-4 feature"> <!--first column-->	
+                    <div class = "circle findYou thirdCircle">
+                    </div>
+                    <span class = "headerColumns">OSIĄGNIJ SUKCES</span>
+
+                </div> <!-- end third column-->
+
+            </div> <!-- end third column-->
+
+            <div class = "row" id = "mainNote"> 
+
+                <div class = "col-sm-4 feature" id= "photoLeft"> <!--first column-->
+                    <h:graphicImage value="/images/main/happy.png"/>
+                </div>
+
+                <div class = "col-sm-8 feature"> <!--first column-->
+                    <p class = "TextSecondMain">
+                        Niekoniecznie zmiana Twojego stylu życia musi być związana z utratą wagi! Choć wśród osób, które zaczynają interesować się zmianem życia na <i>#fit</i> są głównie osoby mające problemy z otyłością. 
+                        Oczywiście bardzo dobrze, że tak się dzieje. Jednak  jeśli nie masz problemów ze swoją wagą nieoznacza to, że musisz żyć niezdrowo!
+                        Niezależnie od wzrostu, wieku czy wagi każdy powinien zacząć zmieniać swoje życie na lepsze. <b>Dlaczego?</b><br/>
+                        Musimy posiadać wiedzę na temat tego czym się żywimy, oraz jak ogromny wpływ
+                        na nasze samopoczucie ma to co jadamy i czy wykonujemy jakąkolwiek <b>REGULARNĄ</b> aktywność fizyczną. <br/>
+                        <b>Zaczynamy?!</b>
+                    </p>
+                </div>	
+            </div>
+        </div>
+        <div id="footer">
+            <ui:insert name="footer" >
+                <ui:include src="footer.xhtml" />
+            </ui:insert>
+
+        </div>
+    </body>
+</html>
