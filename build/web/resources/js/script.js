@@ -1,12 +1,14 @@
 
-$(function() {
+$(function () {
+    
+   $('#buttonModal').click(function() {
+    $('#myModal').modal('show');
+    
+    
+});
 
-    $('#sendAlert').click(function () {
-        
 
-        alert("#{bmi.result}");
 
-    });          
     $("#glownaBody a:contains('Start')").parent().addClass('active');
     $("#kontaktBody a:contains('Kontakt')").parent().addClass('active');
 
@@ -62,7 +64,7 @@ $(function() {
             })
         })
     })
-    
+
 
 });
 

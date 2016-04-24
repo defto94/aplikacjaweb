@@ -159,6 +159,10 @@
     color: #5d5d5d;
     padding-bottom: 40px;
 }
+.modalHeader {
+    color: #5d5d5d;
+    padding-bottom: 20px;
+}
 
 #mainNote {
     margin-top:100px;
@@ -175,10 +179,13 @@
 /* --------------------------------------
      LogIn.html & Registration.html
 -------------------------------------- */     
+.inputModal {
+    margin-right:20px;
+}
 .thinkerPhoto {
-    
     float: right;
 }
+
 #colorLine{ 
     height: 5px;
     border-top: 0;
@@ -193,7 +200,7 @@
 }
 
 #zalogujBody {
-    background-image:	url("../../images/tlo2.png");	
+    background-image:	url("../../images/modalBackground.png");	
 }
 
 #loginForm {
@@ -455,10 +462,7 @@ a#upArray {
     height: 30px;
     background: url('../../images/arrow.png') no-repeat;
 }
-
-a#upArray:hover {
-    height: 45px;
-}	
+	
 
 ul.unstyled {
     list-style:none;
