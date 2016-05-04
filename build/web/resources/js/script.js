@@ -1,12 +1,15 @@
 
 $(function () {
-    
-   $('#buttonModal').click(function() {
-    $('#myModal').modal('show');
-    
-    
-});
 
+    $('#buttonModal').click(function () {
+        $('#myModal').modal('show');
+
+
+    });
+    //popover
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+    });
 
 
     $("#glownaBody a:contains('Start')").parent().addClass('active');
@@ -40,32 +43,13 @@ $(function () {
             return false;
         });
     });
-    /*
-     Skrypt jQuery spełnia kilka funkcji:
-     
-     ukrywa przycisk przy załadowaniu strony,
-     przy przewijaniu strony w dół wyświetla przycisk, przy powrocie do góry strony ponownie go ukrywa,
-     po kliknięciu na strzałkę przewija płynnie stronę do góry.
-     
-     */
-
-
-    //popover
-    $(function () {
-        $('[data-toggle="popover"]').popover()
-    });
-
-
-    $(document).ready(function (e) {
-        $('#menuLogin').click(function () {
-            $.post('login.xhtml', function (xx) {
-                $('#tmpModal').html(xx)
-                $('#myModal').modal('show');
-            })
-        })
-    })
-
-
 });
+
+
+
+
+
+
+
 
 

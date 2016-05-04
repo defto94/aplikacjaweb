@@ -11,6 +11,9 @@
 /* --------------------------------------
       Contact.html
  -------------------------------------- */
+.output {
+    font-weight:bold;
+}
 .contactButton {
     margin-top: 15px;
 }
@@ -39,7 +42,7 @@
 }
 
 #wellOfContactHead {
-    margin-top:25px;
+    margin-top:70px;
     background-color: rgba(65,105,225, 0.6);
     color: #FFFFFF;
     margin-bottom:50px;
@@ -62,7 +65,7 @@
   -------------------------------------- */
 
 #formAdd {
-    margin-top:20px;
+    margin-top:60px;
     background-color: rgba(255, 	181, 	197, 0.7);
     color: #292421;
     font-size: 17px;
@@ -122,7 +125,7 @@
     text-align:center;
     margin-bottom:30px;
 }
-#glownaBody, #bmiBody {
+#glownaBody {
     background-image: url("../../images/body.jpg");
 }
 
@@ -176,9 +179,16 @@
     text-align:center;
 }
 
-/* --------------------------------------
-     LogIn.html & Registration.html
--------------------------------------- */     
+/* -----------------------------------------
+     LogIn.html & Registration.html & BMI
+-------------------------------------------- */    
+#loginLink{
+    padding-top:10px;
+    color: white;
+}
+#bmiHeader {
+    text-align: center;
+}
 .inputModal {
     margin-right:20px;
 }
@@ -195,16 +205,13 @@
         #db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
 }
 
-#zarejestrujBody {
-    background-image:	url("../../images/tlo2.png");	
-}
 
 #zalogujBody {
     background-image:	url("../../images/modalBackground.png");	
 }
 
 #loginForm {
-    margin-top:30px;
+    
     margin-bottom:30px;
 }
 
@@ -213,18 +220,13 @@
     margin-bottom:15px;
 }
 
-#loginHeader {
-    margin-top:30px;
-    text-align:center;
-}
-
 .modal-body{
     background-image:	url("../../images/modalBackground.png");	
 }
-/*poki co modal background bez zmian*/
-.modal{
-    background-image:	url("../../images/glowna.jpg");	
-    overflow: hidden;
+
+#loginHeader, #registrationHeader {
+    padding-top:100px;
+    text-align: center;
 }
 
 /* --------------------------------------
@@ -380,15 +382,15 @@ hr.hrCircle {
 }
 
 #slide1 {
-    background-image: url('../../images/carousel/warzywaSrednie.jpg') top left no-repeat;
+    background: url('../../images/carousel/warzywaSrednie.jpg') top left no-repeat;
 }
 
 #slide2 {
-    background-image: url('../../images/carousel/przepisSredni.jpg') top left no-repeat;
+    background: url('../../images/carousel/przepisSredni.jpg') top left no-repeat;
 }
 
 #slide3 {
-    background-image: url('../../images/carousel/przepisySrednie.jpg') top left no-repeat;
+    background: url('../../images/carousel/przepisySrednie.jpg') top left no-repeat;
 }
 
 /* --------------------------------------
@@ -474,7 +476,22 @@ ul.unstyled {
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
+    #myCarousel .item {
+        height:170px;
+    }
+    
+     #slide1 {
+        background: url('../../images/carousel/warzywaBardzoMale.jpg') top left no-repeat;
+    }
 
+    #slide2 {
+        background: url('../../images/carousel/przepisBardzoMaly.jpg') top left no-repeat;
+    }
+
+    #slide3 {
+        background: url('../../images/carousel/przepisyBardzoMale.jpg') top left no-repeat;
+    }
+    
 }
 
 /* Landscape phone to portrait tablet */
@@ -484,17 +501,18 @@ ul.unstyled {
     }
 
     #slide1 {
-        background-image: url('../../images/carousel/warzywaMale.jpg') top left no-repeat;
+        background: url('../../images/carousel/warzywaMale.jpg') top left no-repeat;
     }
 
     #slide2 {
-        background-image: url('../../images/carousel/przepisMaly.jpg') top left no-repeat;
+        background: url('../../images/carousel/przepisMaly.jpg') top left no-repeat;
     }
 
     #slide3 {
-        background-image: url('../../images/carousel/przepisyMale.jpg') top left no-repeat;
+        background: url('../../images/carousel/przepisyMale.jpg') top left no-repeat;
     }
-
+    
+    /*
     .carousel-caption {
         font-size: 16px;
     }
@@ -502,6 +520,7 @@ ul.unstyled {
     .carousel-caption h4{
         font-size: 22px;
     }
+    */
 }
 
 /* Large desktop */

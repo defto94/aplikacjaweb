@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+
+    <h:body id = "zalogujBody">
+
+        <div id="header">
+            <ui:insert name="header" >
+                <ui:include src="navbar.xhtml" />
+            </ui:insert>
+        </div>
+        <div class = "container" id="myContainer">
+            <div class = "row " id="registrationHeader"> 
+                <span class = "Text second"> Załóż konto </span> <br/>
+                    <hr id = "colorLine"/>
+                        </div> <!--end  row-1-->
+                        <div class = "col-sm-4"></div> <!--martwy odstęp-->
+                        <div class = "col-sm-6" id="loginForm">	
+                            <form class="form-horizontal">
+                                <div class ="form-group">
+                                    <div class = "col-lg-8">
+                                        <div class = "input-group">
+                                            <span class = "input-group-addon glyphicon glyphicon-user"></span>
+                                            <h:inputText class = "form-control"  id = "inputLoginLog"  p:placeholder="Login"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class ="form-group">
+                                    <div class = "col-lg-8">
+                                        <div class = "input-group">
+                                            <span class = "input-group-addon glyphicon glyphicon-envelope"></span>
+                                            <h:inputText class = "form-control"  id = "inputEmailLog"  p:placeholder="E-mail" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class ="form-group">
+                                    <div class = "col-lg-8">
+                                        <div class = "input-group">
+                                            <span class = "input-group-addon glyphicon glyphicon-lock"></span>
+                                            <h:inputText class = "form-control" id = "inputPasswordLog"  p:placeholder="Hasło"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class ="form-group">
+                                    <div class = "col-lg-8">
+                                        <div class = "input-group">
+                                            <span class = "input-group-addon glyphicon glyphicon-check"></span>
+                                            <h:inputText  class = "form-control" id = "inputPasswordLog"  p:placeholder="Powtórz hasło" />
+                                        </div>
+                                        <button class = "btn btn-success  col-sm-12" id = "btnRegistration" type= "submit">Zarejestruj się</button>
+                                        <a href="login.xhtml" id = "loginLink"><p>Masz już konto?</p></a>
+                                    </div>
+                                </div>
+                            </form>				
+                        </div> <!--end col-sm-6-->
+                        </div> 
+                        <div id="footer">
+                            <ui:insert name="footer" >
+                                <ui:include src="footer.xhtml" />
+                            </ui:insert>
+                        </div>
+                        </h:body>
+                        </html>
