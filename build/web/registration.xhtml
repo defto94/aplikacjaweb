@@ -3,7 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <h:body id = "zalogujBody">
 
@@ -15,52 +16,65 @@
         <div class = "container" id="myContainer">
             <div class = "row " id="registrationHeader"> 
                 <span class = "Text second"> Załóż konto </span> <br/>
-                    <hr id = "colorLine"/>
-                        </div> <!--end  row-1-->
-                        <div class = "col-sm-4"></div> <!--martwy odstęp-->
-                        <div class = "col-sm-6" id="loginForm">	
-                            <form class="form-horizontal">
-                                <div class ="form-group">
-                                    <div class = "col-lg-8">
-                                        <div class = "input-group">
-                                            <span class = "input-group-addon glyphicon glyphicon-user"></span>
-                                            <h:inputText class = "form-control"  id = "inputLoginLog"  p:placeholder="Login"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class ="form-group">
-                                    <div class = "col-lg-8">
-                                        <div class = "input-group">
-                                            <span class = "input-group-addon glyphicon glyphicon-envelope"></span>
-                                            <h:inputText class = "form-control"  id = "inputEmailLog"  p:placeholder="E-mail" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class ="form-group">
-                                    <div class = "col-lg-8">
-                                        <div class = "input-group">
-                                            <span class = "input-group-addon glyphicon glyphicon-lock"></span>
-                                            <h:inputText class = "form-control" id = "inputPasswordLog"  p:placeholder="Hasło"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class ="form-group">
-                                    <div class = "col-lg-8">
-                                        <div class = "input-group">
-                                            <span class = "input-group-addon glyphicon glyphicon-check"></span>
-                                            <h:inputText  class = "form-control" id = "inputPasswordLog"  p:placeholder="Powtórz hasło" />
-                                        </div>
-                                        <button class = "btn btn-success  col-sm-12" id = "btnRegistration" type= "submit">Zarejestruj się</button>
-                                        <a href="login.xhtml" id = "loginLink"><p>Masz już konto?</p></a>
-                                    </div>
-                                </div>
-                            </form>				
-                        </div> <!--end col-sm-6-->
-                        </div> 
-                        <div id="footer">
-                            <ui:insert name="footer" >
-                                <ui:include src="footer.xhtml" />
-                            </ui:insert>
+                <hr id = "colorLine"/>
+            </div> <!--end  row-1-->
+            <div class = "col-sm-4"></div> <!--martwy odstęp-->
+            <div class = "col-sm-6" id="loginForm">	
+                <h:outputText value="#{usersController.errorMessage}" escape="false" />
+                <h:form class="form-horizontal" prependId="false">
+                    <div class ="form-group">
+                        <div class = "col-lg-8">
+                            <div class = "input-group">
+                                <span class = "input-group-addon glyphicon glyphicon-user"></span>
+                                <h:inputText value="#{usersController.users.username}" required="true" requiredMessage="Proszę wpisać login!" class = "form-control"  id = "inputLoginReg"  p:placeholder="Login"/>
+                            </div>
+                            <h:messages for="inputLoginReg"/> 
+                            <h:outputText value="#{usersController.errorMessage}" />
                         </div>
-                        </h:body>
-                        </html>
+                    </div>
+                    <div class ="form-group">
+                        <div class = "col-lg-8">
+                            <div class = "input-group">
+                                <span class = "input-group-addon glyphicon glyphicon-envelope"></span>
+                                <h:inputText value="#{usersController.users.email}" required="true" requiredMessage="Proszę wpisać adres e-mail!" validatorMessage="Proszę wpisać prawidłowy adres e-mail"  class = "form-control"  id = "inputEmailReg"  p:placeholder="E-mail" >
+                                    <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+                                </h:inputText>
+                            </div>
+                            <h:messages for="inputEmailReg"/> 
+                            <h:outputText value="#{usersController.errorMessage}" />
+                        </div>
+                    </div>
+                    <div class ="form-group">
+                        <div class = "col-lg-8">
+                            <div class = "input-group">
+                                <span class = "input-group-addon glyphicon glyphicon-lock"></span>
+                                <h:inputSecret value="#{usersController.users.password}" validatorMessage="Nienienie" required="true" requiredMessage="Proszę wpisać hasło!" class = "form-control" id = "inputPasswordReg"  p:placeholder="Hasło"/>
+                            </div>
+                            
+                            <h:messages for="inputPasswordReg"/> 
+                            <h:outputText value="#{usersController.errorMessage}" />
+                        </div>
+                    </div>
+                    <div class ="form-group">
+                        <div class = "col-lg-8">
+                            <div class = "input-group">
+                                <span class = "input-group-addon glyphicon glyphicon-check"></span>
+                                <h:inputText  value="#{usersController.users.password2}" required="true" requiredMessage="Proszę wpisać hasło!" class = "form-control" id = "inputPasswordReg2"  p:placeholder="Powtórz hasło" />
+                            </div>
+                            <h:messages for="inputPasswordReg2"/> 
+                            <h:outputText value="#{usersController.errorMessage}" />
+
+                            <h:commandButton action="#{usersController.save()}" value="Zarejestruj się" class = "btn btn-success  col-sm-12" id = "btnRegistration"/>
+                            <a href="login.xhtml" id = "loginLink"><p>Masz już konto?</p></a>
+                        </div>
+                    </div>
+                </h:form>				
+            </div> <!--end col-sm-6-->
+        </div> 
+        <div id="footer">
+            <ui:insert name="footer" >
+                <ui:include src="footer.xhtml" />
+            </ui:insert>
+        </div>
+    </h:body>
+</html>

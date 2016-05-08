@@ -10,7 +10,7 @@
         <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
         <property name="hibernate.connection.username">webApp</property>
         <property name="hibernate.connection.password">webApp</property>
-        <property name="show_sql">true</property>
-        <mapping class="sources/Registration.java"/>          
+        <property name="hibernate.current_session_context_class">thread</property>	
+        <mapping class="entities.Users"></mapping>          
     </session-factory>
 </hibernate-configuration>

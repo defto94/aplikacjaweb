@@ -2,7 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <h:body id = "artykulyBody">
 
@@ -47,20 +48,17 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Wybierz kategorię</label>
                             <div class="col-lg-9 selectContainer">
-                                <select class="form-control" name="category">
-                                    <option value=""></option>
-                                    <option value="Zupa">Zupa</option>
-                                    <option value="Sałatka">Sałatka</option>
-                                    <option value="Deser">Deser</option>
-                                    <option value="Drugie danie">Drugie danie</option>
-                                    <option value="Śniadanie">Śniadanie</option>
-                                </select>
+
+                                <h:selectOneMenu value="#{studentTwo.country}">
+                                    <f:selectItem itemValue="Zupa" itemLabel="Zupa" />
+                                    <f:selectItem itemValue="Sałatka" itemLabel="Sałatka" />
+                                    <f:selectItem itemValue="Deser" itemLabel="Deser" />
+                                    <f:selectItem itemValue="Drugie danie" itemLabel="Drugie danie" />
+                                    <f:selectItem itemValue="Śniadanie" itemLabel="Śniadanie" />
+                                </h:selectOneMenu>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label" for="file">Wybierz zdjęcie</label>
-                            <input type="file"  name="file" id="file" class="inputFile"/>
-                        </div>
+
 
                         <div class ="form-group">
                             <label class="col-lg-3 control-label" for="inputMessage">Składniki</label>

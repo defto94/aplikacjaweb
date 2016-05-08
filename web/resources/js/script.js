@@ -25,6 +25,12 @@ $(function () {
         $('.dropdown-menu', this).fadeOut('fast');
 
     });
+    
+    $("#sendAlert").click(function() {
+        $("#contactForm").submit(); 
+        alert("Dziękujemy za wysłanie maila. Wkrótce otrzymasz odpowiedź.");
+    });
+
 
     //strzałka w górę
 

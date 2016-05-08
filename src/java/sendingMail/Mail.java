@@ -95,5 +95,5 @@ public class Mail implements Serializable {
         } catch (MessagingException me) {
             throw new RuntimeException(me);
         }
-    }
+    } 
 }
