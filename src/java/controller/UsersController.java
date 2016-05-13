@@ -45,10 +45,11 @@ public class UsersController {
             UsersModel usersModel = new UsersModel();
             this.users.setPassword(EncryptPassword.generateStorngPasswordHash(this.users.getPassword()));
             usersModel.create(users);
-            return "login?faces-redirect=true";
+            this.errorMessage = "Twoje konto zostało pomyślnie utworzone. Możesz się już zalogować.";
+            return errorMessage;
         } catch (Exception e) {
-            this.errorMessage = "Nie mozna utworzyc konta.";
-            return "registration?faces-redirect=true";
+            this.errorMessage = "Nie można utworzyć konta. Użytkownik o podanym loginie już istnieje.";
+            return errorMessage;
         }
 
     }
@@ -62,16 +63,16 @@ public class UsersController {
                         users2.getPassword())) {
                     return "welcome?faces-redirect=true";
                 } else {
-                    this.errorMessage = "Account's Invalid";
-                    return "login?faces-redirect=true";
+                    this.errorMessage = "Niepoprawne hasło. Proszę wpisać ponownie.";
+                    return errorMessage;
                 }
             } else {
-                this.errorMessage = "Account's Invalid";
-                return "login?faces-redirect=true";
+                this.errorMessage = "Niepoprawna nazwa użytkownika. Proszę wpisać ponownie.";
+                return errorMessage;
             }
         } catch (Exception e) {
-            this.errorMessage = "Account's Invalid";
-            return "login?faces-redirect=true";
+            this.errorMessage = "Coś poszło nie tak. Spróbuj ponownie.";
+            return errorMessage;
         }
     }
 
@@ -81,7 +82,4 @@ public class UsersController {
         return "/login?faces-redirect=true";
     }
 
-    public void wiadomosc(String s) {
-        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, s, ""));
-    }
 }

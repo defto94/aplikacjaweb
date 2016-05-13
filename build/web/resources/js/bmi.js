@@ -28,22 +28,24 @@ function computeform(form) {
 
         yourbmi = Math.round(bmi(form.weight.value, form.height.value / 100));
         form.bmi.value = yourbmi;
-        if (yourbmi > 40) {
-            form.my_comment.value = "Otyłość! Potrzebujesz hospitalizacji.";
-        } else if (yourbmi > 30 && yourbmi <= 40) {
-            form.my_comment.value = "Nadwaga! Zacznij ćwiczyć i skonsultuj się ze specjalistą.";
-        } else if (yourbmi > 27 && yourbmi <= 30) {
-            form.my_comment.value = "Nadwaga! Zacznij ćwiczyć - osiągnij zdrową wagę dla swojego organizmu!";
-        } else if (yourbmi > 22 && yourbmi <= 27) {
-            form.my_comment.value = "Nie jest źle, jednak masz kilka kilogramów za dużo. ";
-        } else if (yourbmi >= 21 && yourbmi <= 22) {
-            form.my_comment.value = "Masz odpowiednią wagę. Tak trzymaj.";
-        } else if (yourbmi >= 18 && yourbmi < 21) {
-            form.my_comment.value = "Masz niedowagę. Zacznij jeść więcej.";
-        } else if (yourbmi >= 16 && yourbmi < 18) {
-            form.my_comment.value = "Twoje BMI jest poniżej normy! Skonsultuj się ze specjalistą.";
-        } else if (yourbmi < 16) {
-            form.my_comment.value = yourbmi + "Masz zdecydowanie zbyt niską wagę! Skonsultuj się ze specjalistą jak najszybciej. ";
+        if (yourbmi > 50) {
+            form.my_comment.value = "Otyłość IV stopnia! (skrajna) Potrzebujesz hospitalizacji.";
+        } else if (yourbmi > 40 && yourbmi <= 50) {
+            form.my_comment.value = "Otyłość III stopnia! (śmiertelna) Potrzebujesz hospitalizacji.";
+        } else if (yourbmi > 35 && yourbmi <= 40) {
+            form.my_comment.value = "Otyłość II stopnia! Skonsultuj się ze specjalistą.";
+        } else if (yourbmi > 30 && yourbmi <= 35) {
+            form.my_comment.value = "Otyłość I stopnia! Skonsultuj się ze specjalistą i osiągnij zdrową wagę. ";
+        } else if (yourbmi >= 27 && yourbmi <= 30) {
+            form.my_comment.value = "Masz nadwagę II stopnia. Skonsutuj się ze specjalistą i osiągnij zdrową wagę.";
+        } else if (yourbmi >= 25 && yourbmi < 27) {
+            form.my_comment.value = "Masz nadwagę I stopnia. Skonsutuj się ze specjalistą i osiągnij zdrową wagę.";
+        } else if (yourbmi >= 18  && yourbmi < 25) {
+            form.my_comment.value = "Masz zdrową wagę. Tak trzymaj.";
+        } else if (yourbmi<18) {
+            form.my_comment.value = "Niedowaga! Skonsultuj się ze specjalistą.";  
+        } else {
+            form.my_comment.value = "Wprowadź prawidłowy wzrost i wagę. ";
         }
     }
     return;

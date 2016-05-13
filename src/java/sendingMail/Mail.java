@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package sendingMail;
 
 import java.io.Serializable;
@@ -32,6 +27,15 @@ public class Mail implements Serializable {
     private String name;
     private String mailAddress;
     private String contain;
+    private String successMessage="";
+
+    public String getSuccessMessage() {
+        return successMessage;
+    }
+
+    public void setSuccessMessage(String successMessage) {
+        this.successMessage = successMessage;
+    }
 
     public String getHeader() {
         return header;
@@ -92,8 +96,10 @@ public class Mail implements Serializable {
                     + "<b>Temat: </b>" + header + "<br/>"
                     + "<b>Wiadomosc: </b>" + contain + "<br/>", "text/html");
             Transport.send(message);
+            this.successMessage="Twój e-mail został poprawnie wysłany. Wkrótce otrzymasz odpowiedź.";
+            
         } catch (MessagingException me) {
             throw new RuntimeException(me);
         }
-    } 
+    }
 }

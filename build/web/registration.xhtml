@@ -7,7 +7,6 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <h:body id = "zalogujBody">
-
         <div id="header">
             <ui:insert name="header" >
                 <ui:include src="navbar.xhtml" />
@@ -20,7 +19,7 @@
             </div> <!--end  row-1-->
             <div class = "col-sm-4"></div> <!--martwy odstęp-->
             <div class = "col-sm-6" id="loginForm">	
-                <h:outputText value="#{usersController.errorMessage}" escape="false" />
+                <h:outputText value="#{usersController.errorMessage}" id="messageError" escape="false" />
                 <h:form class="form-horizontal" prependId="false">
                     <div class ="form-group">
                         <div class = "col-lg-8">
@@ -29,7 +28,6 @@
                                 <h:inputText value="#{usersController.users.username}" required="true" requiredMessage="Proszę wpisać login!" class = "form-control"  id = "inputLoginReg"  p:placeholder="Login"/>
                             </div>
                             <h:messages for="inputLoginReg"/> 
-                            <h:outputText value="#{usersController.errorMessage}" />
                         </div>
                     </div>
                     <div class ="form-group">
@@ -41,7 +39,6 @@
                                 </h:inputText>
                             </div>
                             <h:messages for="inputEmailReg"/> 
-                            <h:outputText value="#{usersController.errorMessage}" />
                         </div>
                     </div>
                     <div class ="form-group">
@@ -50,9 +47,7 @@
                                 <span class = "input-group-addon glyphicon glyphicon-lock"></span>
                                 <h:inputSecret value="#{usersController.users.password}" validatorMessage="Nienienie" required="true" requiredMessage="Proszę wpisać hasło!" class = "form-control" id = "inputPasswordReg"  p:placeholder="Hasło"/>
                             </div>
-                            
                             <h:messages for="inputPasswordReg"/> 
-                            <h:outputText value="#{usersController.errorMessage}" />
                         </div>
                     </div>
                     <div class ="form-group">
@@ -62,9 +57,7 @@
                                 <h:inputText  value="#{usersController.users.password2}" required="true" requiredMessage="Proszę wpisać hasło!" class = "form-control" id = "inputPasswordReg2"  p:placeholder="Powtórz hasło" />
                             </div>
                             <h:messages for="inputPasswordReg2"/> 
-                            <h:outputText value="#{usersController.errorMessage}" />
-
-                            <h:commandButton action="#{usersController.save()}" value="Zarejestruj się" class = "btn btn-success  col-sm-12" id = "btnRegistration"/>
+                            <h:commandButton action="#{usersController.save()}" value="Zarejestruj się" class = "btn btn-success col-sm-12" id = "btnRegistration"/>
                             <a href="login.xhtml" id = "loginLink"><p>Masz już konto?</p></a>
                         </div>
                     </div>

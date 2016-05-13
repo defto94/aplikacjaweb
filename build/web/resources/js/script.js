@@ -3,40 +3,36 @@ $(function () {
 
     $('#buttonModal').click(function () {
         $('#myModal').modal('show');
-
-
-    });
-    //popover
-    $(function () {
-        $('[data-toggle="popover"]').popover();
     });
 
-
+    $(document).ready(function () {
+        $('#myCarousel2').carousel({
+            interval: 1800
+        })
+    });
+    
+            //popover
+            $(function () {
+                $('[data-toggle="popover"]').popover();
+            });
     $("#glownaBody a:contains('Start')").parent().addClass('active');
     $("#kontaktBody a:contains('Kontakt')").parent().addClass('active');
-
     //wysuwane menu jako hover
     $('ul.nav li.dropdown').hover(function () {
 
         $('.dropdown-menu', this).fadeIn();
-
     }, function () {
 
         $('.dropdown-menu', this).fadeOut('fast');
-
     });
-    
-    $("#sendAlert").click(function() {
-        $("#contactForm").submit(); 
+    $("#sendAlert").click(function () {
+        $("#contactForm").submit();
         alert("Dziękujemy za wysłanie maila. Wkrótce otrzymasz odpowiedź.");
     });
-
-
     //strzałka w górę
 
     $(document).ready(function () {
         $('#upArray').hide();
-
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
                 $('#upArray').fadeIn(500);

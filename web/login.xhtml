@@ -12,14 +12,14 @@
                 <ui:include src="navbar.xhtml" />
             </ui:insert>
         </div>
-
         <div class = "container" id="myContainer">
             <div class = "row" id="loginHeader"> 
                 <span class = "Text second"> Witaj z powrotem! </span> <br/>
                 <hr id = "colorLine"/>
             </div> <!--end  row-1-->
             <div class = "col-sm-4"></div> <!--martwy odstęp-->
-            <div class = "col-sm-6" id="loginForm">	
+            <div class = "col-sm-6" id="loginForm">
+                <h:outputText value="#{usersController.errorMessage}" id="messageError" escape="false" />
                 <h:form class="form-horizontal">
                     <div class ="form-group">		
                         <div class = "col-lg-8">				
@@ -34,24 +34,21 @@
                         <div class = "col-lg-8">
                             <div class = "input-group">
                                 <span class = "input-group-addon glyphicon glyphicon-lock"></span>
-                                <h:inputText value="#{usersController.users.password}"  required="true" requiredMessage="Proszę wpisać hasło!" class = "form-control"  id = "inputPasswordLog"  p:placeholder="Hasło" />
+                                <h:inputSecret value="#{usersController.users.password}"  required="true" requiredMessage="Proszę wpisać hasło!" class = "form-control"  id = "inputPasswordLog"  p:placeholder="Hasło" />
                             </div>
-
                             <h:messages for="inputPasswordLog"/>
-                            <h:commandButton action="#{usersController.login()}" value="Zaloguj się" class = "btn btn-success  col-sm-12" id="btnLogin"/><br/>
+                            <h:commandButton action="#{usersController.login()}" value="Zaloguj się" class = "btn btn-success  col-sm-12" id="btnRegistration"/><br/>
                             <a href="registration.xhtml" id = "loginLink"><p>Nie masz jeszcze konta?</p></a>
                         </div>
                     </div>
                 </h:form>				
             </div> <!--end col-sm-6-->
         </div>
-
         <div id="footer">
             <ui:insert name="footer" >
                 <ui:include src="footer.xhtml" />
             </ui:insert>
         </div>
-
     </h:body>
 
 </html>

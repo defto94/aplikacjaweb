@@ -7,21 +7,17 @@
       xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
 
     <h:body id = "kontaktBody">
-
         <div id="header">
             <ui:insert name="header" >
                 <ui:include src="navbar.xhtml" />
             </ui:insert>
         </div>
         <div class = "container" id="myContainer contactErrorSpace">
-            
             <div class="row">
                 <div class = "container">
                     <h:graphicImage value="/images/kontakt.jpg" class="img-responsive"/>
                 </div>
             </div>
-
-            
             <div class  = "row" id = "contactFeatures">
                 <div class = "col-sm-1 icons"></div>
                 <div class = "col-sm-4 icons">
@@ -36,9 +32,7 @@
 
                     <a href="https://pl.linkedin.com/in/aleksandra-%C5%9Brutkowska-a6ab28110" target="_blank" data-toggle="popover" data-trigger="hover"  placement="right" data-content="Poprzez LinkedIn">
                         <h:graphicImage value="/images/icons/linked.png"/></a><br/>
-
                 </div>
-
                 <div class = "col-sm-6" id="loginForm">
                     <div class = "well" id="formContact">
                         <h:form class="form-horizontal">
@@ -47,33 +41,24 @@
                                 <div class = "col-lg-9">
                                     <h:inputText p:placeholder = " " required="true" requiredMessage="Proszę uzupełnić imię i nazwisko!" value="#{mail.name}" class = "form-control" id = "inputName" />
                                     <h:messages for="inputName"/> 
-                                    
                                 </div>
-
                             </div>
-
                             <div class ="form-group">
                                 <h:outputText styleClass="output" value="Adres email: " class="col-lg-3 control-label"/>
                                 <div class = "col-lg-9">
                                     <h:inputText p:placeholder = " " required="true" requiredMessage="Proszę uzupełnić adres E-mail!" validatorMessage="Proszę wpisać prawidłowy adres e-mail" value="#{mail.mailAddress}" class = "form-control" id = "inputEmail"  >
                                         <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
-
                                     </h:inputText>
                                     <h:messages for="inputEmail"/> 
-                                     <h:outputText value="#{usersController.errorMessage}" />
+                                    <h:outputText value="#{usersController.errorMessage}" />
                                 </div>
-
-
                             </div>
-
                             <div class ="form-group">
                                 <h:outputText styleClass="output" value="Temat: " class="col-lg-3 control-label"/>
                                 <div class = "col-lg-9">
                                     <h:inputText required="true" p:placeholder = " " requiredMessage="Proszę uzupełnić temat!" value="#{mail.header}" class = "form-control" id = "inputTheme" />
-
                                     <h:messages for="inputTheme"/> 
                                 </div>
-
                             </div>
                             <div class ="form-group">
                                 <h:outputText styleClass="output" class="col-lg-3 control-label" value="Treść: " />
@@ -81,16 +66,12 @@
                                     <h:inputTextarea  p:placeholder = " " required="true"  requiredMessage="Proszę uzupełnić treść!" value="#{mail.contain}"  class = "form-control" id = "inputMessage" label = "inputMessage" cols= "4"  rows = "4"/> 
                                     <h:messages for="inputMessage"/> 
                                     <h:commandButton actionListener="#{mail.sendMail}" onchange="alert('h:commandButton');" type="submit"  id="sendAlert" class = "btn btn-info pull-right contactButton" value="Wyślij!"/>
-
+                                    <h:outputText value="#{mail.successMessage}" id="messageError" escape="false" />
                                 </div>
                             </div>
-
                         </h:form>
                     </div>
-                    <div class="alert alert-success alert-dismissable">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                        Success! message sent successfully.
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -98,7 +79,6 @@
             <ui:insert name="footer" >
                 <ui:include src="footer.xhtml" />
             </ui:insert>
-
         </div>
     </h:body>
 </html>

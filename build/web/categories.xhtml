@@ -5,18 +5,55 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
     <h:body id = "artykulyBody">
+
         <div id="header">
             <ui:insert name="header" >
                 <ui:include src="navbar.xhtml" />
             </ui:insert>
         </div>
         <div class = "container" id="myContainer">
-            <div class="row">
-                <div class = "container">
-                    <h:graphicImage value="/images/przepisy.jpg" class="img-responsive"/>
-                </div>
-            </div>
+
+
             <div class = "row" id = "categories">
+                <div class = "carousel slide" id="myCarousel2">
+
+                    <!--nakładka na zjdęcia, 3 "SLAJDY"-->
+                    <div class = "carousel-inner">
+                        <div class = "item active" id="slide1cat">
+                            <div class = "carousel-caption slide3Text"> 
+                                <h2> SAŁATKI</h2>
+                            </div> 
+                        </div> 
+
+                        <div class = "item" id= "slide2cat">
+                            <div class = "carousel-caption slide3Text"> <!--do fajnego wyświetlania tekstu na karuzeli-->
+                                <h2>OBIADY</h2>
+                            </div> 
+                        </div> 
+
+                        <div class = "item" id="slide3cat">
+                            <div class = "carousel-caption slide3Text"> <!--do fajnego wyświetlania tekstu na karuzeli-->
+                                <h2>DESERY</h2>
+                            </div> <!--end div carousel-caption"-->
+                        </div> <!--item-->
+
+                        <div class = "item" id="slide4cat">
+                            <div class = "carousel-caption slide3Text"> <!--do fajnego wyświetlania tekstu na karuzeli-->
+                                <h2>ZUPY</h2>
+                            </div> <!--end div carousel-caption"-->
+                        </div> <!--item-->
+
+                        <div class = "item" id="slide5cat">
+                            <div class = "carousel-caption slide3Text"> <!--do fajnego wyświetlania tekstu na karuzeli-->
+                                <h2>ŚNIADANIA</h2>
+                            </div> <!--end div carousel-caption"-->
+                        </div> <!--item-->
+
+                    </div> <!--end carousel inner-->
+
+                    <!--strzałka w lewo i w prawo-->
+
+                </div> <!--end carousel-->
                 <div class = "col-sm-4 categrory">
                     <div class = "panel">
                         <h3 class = "panel-title">Zupy</h3>

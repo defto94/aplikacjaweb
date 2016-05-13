@@ -3,7 +3,6 @@
       Footer
  -------------------------------------- */
 
-
 .headersInFooter {
     color:#99ffcc;
 }
@@ -99,8 +98,6 @@
 
 .circle.thirdCircle {
     background-image: url("../../images/icons/like.png")  ;
-
-
 }
 
 #photoLeft{
@@ -119,6 +116,7 @@
 }
 #glownaBody {
     background-image: url("../../images/body.jpg");
+     font-family:"Trebuchet MS";
 }
 
 .headerColumns {
@@ -197,13 +195,11 @@
         #db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
 }
 
-
 #zalogujBody {
     background-image:	url("../../images/modalBackground.png");	
 }
 
 #loginForm {
-
     margin-bottom:30px;
 }
 
@@ -212,11 +208,15 @@
     margin-bottom:15px;
 }
 #btnLogin {
-    margin-top:20px;
+    margin-top: 15px;
     margin-bottom:15px; 
 }
 .modal-body{
     background-image:	url("../../images/modalBackground.png");	
+}
+
+#modalCategory{
+    background-image:	url("../../images/fruits.jpg");
 }
 
 #loginHeader, #registrationHeader {
@@ -231,6 +231,23 @@
     background-attachment: fixed;
 }
 
+.welcomeButtons {
+    margin-top: 300px;
+    float:left;
+    width: 250px;
+    height: 50px;
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#messageError {
+    padding-bottom: 10px;
+}
+
+.btnRecipe {
+    width: 250px;
+}
 /* --------------------------------------
        Articles.html
   -------------------------------------- */     
@@ -375,12 +392,17 @@ p.btnInArticlesHide:hover {
     padding-bottom:220px;
 }
 
+
 .slide3Text {
     color:#FFFFFF;
 }
 
 #myCarousel .item {
     height:400px;
+}
+
+#myCarousel2 .item {
+    height:300px;
 }
 
 #slide1 {
@@ -392,7 +414,28 @@ p.btnInArticlesHide:hover {
 }
 
 #slide3 {
-    background: url('../../images/carousel/przepisySrednie.jpg') top left no-repeat;
+    background: url('../../images/carousel/bmiSrednie.jpg') top left no-repeat;
+}
+
+
+#slide1cat {
+    background: url('../../images/carousel/salatka.jpg') top left no-repeat;
+}
+
+#slide2cat {
+    background: url('../../images/carousel/obiad.jpg') top left no-repeat;
+}
+
+#slide3cat {
+    background: url('../../images/carousel/ciastko.jpg') top left no-repeat;
+}
+
+#slide4cat {
+    background: url('../../images/carousel/zupa.jpg') top left no-repeat;
+}
+
+#slide5cat {
+    background: url('../../images/carousel/sniadanie2.jpg') top left no-repeat;
 }
 
 /* --------------------------------------
@@ -491,7 +534,7 @@ ul.unstyled {
     }
 
     #slide3 {
-        background: url('../../images/carousel/przepisyBardzoMale.jpg') top left no-repeat;
+        background: url('../../images/carousel/bmiBardzoMale.jpg') top left no-repeat;
     }
 
 }
@@ -511,7 +554,7 @@ ul.unstyled {
     }
 
     #slide3 {
-        background: url('../../images/carousel/przepisyMale.jpg') top left no-repeat;
+        background: url('../../images/carousel/bmiMale.jpg') top left no-repeat;
     }
 
     /*
@@ -540,7 +583,7 @@ ul.unstyled {
     }
 
     #slide3 {
-        background: url('../../images/carousel/przepisyDuze.jpg') top left no-repeat;
+        background: url('../../images/carousel/bmiDuze.jpg') top left no-repeat;
     }
 }
 
