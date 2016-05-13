@@ -34,7 +34,7 @@
                         <div class ="form-group">
                             <label class="col-lg-3 control-label" for="inputMessage">Nazwa:</label>
                             <div class = "col-lg-9">
-                                <textarea class = "form-control" id = "inputMessage" > </textarea> 
+                                <textarea class = "form-control" value="#{cont.re.name}" id = "inputMessage" > </textarea> 
 
                             </div>
                         </div>
@@ -42,8 +42,7 @@
                         <div class ="form-group">
                             <label class="col-lg-3 control-label" for="inputMessage">Składniki:</label>
                             <div class = "col-lg-9">
-                                <textarea class = "form-control" id = "inputMessage"  rows = "4"> </textarea> 
-
+                                <textarea class = "form-control" value="#{cont.re.ingredients}" id = "inputMessage"  rows = "4"> </textarea> 
                             </div>
                         </div>
 
@@ -51,9 +50,9 @@
                         <div class ="form-group">
                             <label class="col-lg-3 control-label" for="inputMessage">Przepis:</label>
                             <div class = "col-lg-9">
-                                <textarea class = "form-control" id = "inputMessage"  rows = "20"> </textarea> 
+                                <textarea class = "form-control" id = "inputMessage" value="#{cont.re.recipe}" rows = "20"> </textarea> 
 
-                                <h:commandButton type="submit" id ="sendAlert" class = "btn btn-info pull-right" value="Wyślij!"/>
+                                <h:commandButton type="submit" id ="sendAlert" class = "btn btn-info pull-right" action="#{cont.create()}" value="Wyślij!"/>
 
                                 <div class="alert alert-success alert-dismissable">
                                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>

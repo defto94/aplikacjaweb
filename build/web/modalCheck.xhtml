@@ -25,20 +25,20 @@
 
                                         <div class ="form-group">
                                             <label class="col-lg-3 control-label" for="inputName">Nazwa:</label>
-                                            <textarea class = "form-control" id = "inputName" > </textarea> 
+                                            <h:inputTextarea class = "form-control" value="#{cont.re.name}" id = "inputName" ></h:inputTextarea>
                                         </div>
 
                                         <div class ="form-group">
                                             <label class="col-lg-3 control-label" for="inputIngredients">Składniki:</label>
-                                            <textarea class = "form-control" id = "inputIngredients"  rows = "4"> </textarea> 
+                                            <h:inputTextarea class = "form-control" id = "inputIngredients"  value="#{cont.re.ingredients}" rows = "4"> </h:inputTextarea>
                                         </div>
 
                                         <div class ="form-group">
                                             <label class="col-lg-3 control-label" for="inputRecipe">Przepis:</label>
 
-                                            <textarea class = "form-control" id = "inputRecipe"  rows = "20"> </textarea> 
+                                            <h:inputTextarea class = "form-control" id = "inputRecipe" value="#{cont.re.recipe}" rows = "20"> </h:inputTextarea>
 
-                                            <h:commandButton type="submit" id ="sendAlert" class = "btn btn-info pull-right" value="Wyślij!"/>
+                                            <h:commandButton type="submit" id ="sendAlert" class = "btn btn-info pull-right" action="#{cont.create()}" value="Wyślij!"/>
 
                                             <div class="alert alert-success alert-dismissable">
                                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>

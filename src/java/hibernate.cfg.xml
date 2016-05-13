@@ -11,6 +11,7 @@
         <property name="hibernate.connection.username">webApp</property>
         <property name="hibernate.connection.password">webApp</property>
         <property name="hibernate.current_session_context_class">thread</property>	
-        <mapping class="entities.Users"></mapping>          
+        <mapping class="entities.Users"></mapping>     
+        <mapping class="entities.Recipes"></mapping>  
     </session-factory>
 </hibernate-configuration>
