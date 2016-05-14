@@ -36,10 +36,11 @@
                                 <span class = "input-group-addon glyphicon glyphicon-lock"></span>
                                 <h:inputSecret value="#{usersController.users.password}"  required="true" requiredMessage="Proszę wpisać hasło!" class = "form-control"  id = "inputPasswordLog"  p:placeholder="Hasło" />
                             </div>
+                              <h:commandButton action="#{usersController.login()}" value="Zaloguj się" class = "btn btn-success  col-sm-12" id="btnLogin"/><br/>
+                             <a href="registration.xhtml" id = "loginLink"><p>Nie masz jeszcze konta?</p></a>
+                      
                             <h:messages for="inputPasswordLog"/>
-                            <h:commandButton action="#{usersController.login()}" value="Zaloguj się" class = "btn btn-success  col-sm-12" id="btnRegistration"/><br/>
-                            <a href="registration.xhtml" id = "loginLink"><p>Nie masz jeszcze konta?</p></a>
-                        </div>
+                            </div>
                     </div>
                 </h:form>				
             </div> <!--end col-sm-6-->

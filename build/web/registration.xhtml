@@ -48,19 +48,12 @@
                                 <h:inputSecret value="#{usersController.users.password}" validatorMessage="Nienienie" required="true" requiredMessage="Proszę wpisać hasło!" class = "form-control" id = "inputPasswordReg"  p:placeholder="Hasło"/>
                             </div>
                             <h:messages for="inputPasswordReg"/> 
-                        </div>
-                    </div>
-                    <div class ="form-group">
-                        <div class = "col-lg-8">
-                            <div class = "input-group">
-                                <span class = "input-group-addon glyphicon glyphicon-check"></span>
-                                <h:inputText  value="#{usersController.users.password2}" required="true" requiredMessage="Proszę wpisać hasło!" class = "form-control" id = "inputPasswordReg2"  p:placeholder="Powtórz hasło" />
-                            </div>
-                            <h:messages for="inputPasswordReg2"/> 
                             <h:commandButton action="#{usersController.save()}" value="Zarejestruj się" class = "btn btn-success col-sm-12" id = "btnRegistration"/>
                             <a href="login.xhtml" id = "loginLink"><p>Masz już konto?</p></a>
+
                         </div>
                     </div>
+                   
                 </h:form>				
             </div> <!--end col-sm-6-->
         </div> 

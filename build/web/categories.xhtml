@@ -13,8 +13,6 @@
             </ui:insert>
         </div>
         <div class = "container" id="myContainer">
-
-
             <div class = "row" id = "categories">
                 <div class = "carousel slide" id="myCarousel2">
 
@@ -49,76 +47,41 @@
                                 <h2>ŚNIADANIA</h2>
                             </div> <!--end div carousel-caption"-->
                         </div> <!--item-->
-
                     </div> <!--end carousel inner-->
-
-                    <!--strzałka w lewo i w prawo-->
-
                 </div> <!--end carousel-->
-                <div class = "col-sm-4 categrory">
-                    <div class = "panel">
-                        <h3 class = "panel-title">Zupy</h3>
-                        <h:graphicImage value="/images/soup.jpg" alt = "soup" class = "img-thumbnail"/>
-                        <p>Zupy to doskonały pomysł na pożywne danie w każde popołudnie!</p>
-                        <a href ="soup.xhtml" class ="btn btn-warning btn-block"> Zupy </a>
-                    </div> <!--end panel"-->
-                </div> <!--end category"-->
-                <div class = "col-sm-4 categrory">
-                    <div class = "panel">
-                        <h3 class = "panel-title">Sałatki</h3>
-                        <h:graphicImage value="/images/salatki.jpg" alt = "soup" class = "img-thumbnail"/>
-                        <p>Sałatki czyli potrawy przygotowywane wyłącznie ze świeżych warzyw.</p>
-                        <a href ="salad.xhtml" class ="btn btn-warning btn-block"> Sałatki</a>
-                    </div> 
-                </div> 
-                <div class = "col-sm-4 categrory">
-                    <div class = "panel">
-                        <h3 class = "panel-title">Desery</h3>
-                        <h:graphicImage value="/images/deser.jpg" alt = "soup" class = "img-thumbnail"/>
-                        <p>Zdrowe desery czyli słodko i niskokalorycznie! </p>
-                        <a href ="dessert.xhtml" class ="btn btn-warning btn-block"> Desery </a>
-                    </div> <!--end panel"-->
-                </div> <!--end category"-->
             </div> <!--end categories-->
-            <div class = "row" id = "categoriesSecond">
-                <div class = "col-sm-2 categrory"></div>
-                <div class = "col-sm-4 categrory">
-                    <div class = "panel">
-                        <h3 class = "panel-title">Drugie dania</h3>
-                        <h:graphicImage value="/images/obiady.jpg" alt = "soup" class = "img-thumbnail"/>
-                        <p>Najobfitszy  i najbardziej ulubiony posiłek w ciągu dnia niekonwencjonalnie. </p>
-                        <a href ="second.xhtml" class ="btn btn-warning btn-block"> Drugie dania </a>
-                    </div> <!--end panel"-->
-                </div>
-                <div class = "col-sm-4 categrory">
-                    <div class = "panel">
-                        <h3 class = "panel-title">Śniadania</h3>
-                        <h:graphicImage value="/images/sniadanie.jpg" alt = "soup" class = "img-thumbnail"/>
-                        <p>Odpowiednio zbilansowane śniadanie zapewnia naszym organizmom energię na resztę dnia. </p>
-                        <a href ="breakfast.xhtml" class ="btn btn-warning btn-block"> Śniadania </a>
-                    </div> <!--end panel"-->
-                </div>
-            </div> <!--end container-->
+
+
             <h:form>
-                <h:dataTable value="#{cont.list}" var="i">
 
-
+                <h:dataTable value="#{cont.list}" var="i" class="table">
                     <h:column>
-                        <f:facet name="header">Account numb</f:facet>
-                            #{i.ingredients}
-                    </h:column>
-
-                    <h:column>
-                        <f:facet name="header">Account numb</f:facet>
-                            #{i.recipe}
-                    </h:column>
-                    <h:column>
-                        <f:facet name="header">Account numb</f:facet>
-                            #{i.name}
+                        <div class="col-sm-1 "/>
+                        <div class="col-sm-9 panel " >
+                            <div class="col-sm-12 " id = "titleTable">
+                                <h2>#{i.name}</h2> 
+                                <hr id = "colorLine"/>
+                            </div>
+                            <div class="col-sm-6 ">
+                                <div id="ingredientsText">
+                                    <h3 class="subtitleTable">SKŁADNIKI:</h3>
+                                    #{i.ingredients} 
+                                </div>
+                            </div>
+                            <div class="col-sm-6 ">
+                                <div id="recipeText">
+                                    <h3 class="subtitleTable">PRZEPIS:</h3>
+                                    #{i.recipe}
+                                </div>
+                            </div>
+                        </div>
                     </h:column>
                 </h:dataTable>
+
             </h:form>
+
         </div>
+
         <div id="footer">
             <ui:insert name="footer" >
                 <ui:include src="footer.xhtml" />

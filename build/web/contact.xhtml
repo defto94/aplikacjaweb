@@ -65,7 +65,7 @@
                                 <div class = "col-lg-9">
                                     <h:inputTextarea  p:placeholder = " " required="true"  requiredMessage="Proszę uzupełnić treść!" value="#{mail.contain}"  class = "form-control" id = "inputMessage" label = "inputMessage" cols= "4"  rows = "4"/> 
                                     <h:messages for="inputMessage"/> 
-                                    <h:commandButton actionListener="#{mail.sendMail}" onchange="alert('h:commandButton');" type="submit"  id="sendAlert" class = "btn btn-info pull-right contactButton" value="Wyślij!"/>
+                                    <h:commandButton  type="submit"  id="sendAlert" class = "btn btn-info pull-right contactButton" value="Dodaj!"/>
                                     <h:outputText value="#{mail.successMessage}" id="messageError" escape="false" />
                                 </div>
                             </div>

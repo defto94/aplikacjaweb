@@ -33,7 +33,7 @@ public class Recipes  implements java.io.Serializable {
      @Id 
 
     
-    @Column(name="NAME", unique=true, nullable=false, length=50)
+    @Column(name="NAME", unique=true, nullable=false, length=100)
     public String getName() {
         return this.name;
     }
@@ -53,7 +53,7 @@ public class Recipes  implements java.io.Serializable {
     }
 
     
-    @Column(name="RECIPE", nullable=false, length=20)
+    @Column(name="RECIPE", nullable=false, length=3500)
     public String getRecipe() {
         return this.recipe;
     }

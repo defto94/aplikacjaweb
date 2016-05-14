@@ -26,8 +26,8 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Users.findAll", query = "SELECT u FROM Users u"),
     @NamedQuery(name = "Users.findByUsername", query = "SELECT u FROM Users u WHERE u.username = :username"),
     @NamedQuery(name = "Users.findByEmail", query = "SELECT u FROM Users u WHERE u.email = :email"),
-    @NamedQuery(name = "Users.findByPassword", query = "SELECT u FROM Users u WHERE u.password = :password"),
-    @NamedQuery(name = "Users.findByPassword2", query = "SELECT u FROM Users u WHERE u.password2 = :password2")})
+    @NamedQuery(name = "Users.findByPassword", query = "SELECT u FROM Users u WHERE u.password = :password")})
+   // @NamedQuery(name = "Users.findByPassword2", query = "SELECT u FROM Users u WHERE u.password2 = :password2")})
 public class Users implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -41,9 +41,7 @@ public class Users implements Serializable {
     @Basic(optional = false)
     @Column(name = "PASSWORD")
     private String password;
-    @Basic(optional = false)
-    @Column(name = "PASSWORD2")
-    private String password2;
+    
 
     public Users() {
     }
@@ -52,11 +50,10 @@ public class Users implements Serializable {
         this.username = username;
     }
 
-    public Users(String username, String email, String password, String password2) {
+    public Users(String username, String email, String password) {
         this.username = username;
         this.email = email;
         this.password = password;
-        this.password2 = password2;
     }
 
     public String getUsername() {
@@ -83,13 +80,6 @@ public class Users implements Serializable {
         this.password = password;
     }
 
-    public String getPassword2() {
-        return password2;
-    }
-
-    public void setPassword2(String password2) {
-        this.password2 = password2;
-    }
 
     @Override
     public int hashCode() {

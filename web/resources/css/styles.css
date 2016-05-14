@@ -116,7 +116,7 @@
 }
 #glownaBody {
     background-image: url("../../images/body.jpg");
-     font-family:"Trebuchet MS";
+    font-family:"Trebuchet MS";
 }
 
 .headerColumns {
@@ -169,11 +169,14 @@
     text-align:center;
 }
 
+sendAlertRecipe {
+    margin-top: 20px;
+}
 /* -----------------------------------------
      LogIn.html & Registration.html & BMI
 -------------------------------------------- */    
 #loginLink{
-    padding-top:10px;
+    margin-top: 20px;
     color: white;
 }
 #bmiHeader {
@@ -208,8 +211,8 @@
     margin-bottom:15px;
 }
 #btnLogin {
-    margin-top: 15px;
-    margin-bottom:15px; 
+    margin-top: 25px;
+    margin-bottom:25px; 
 }
 .modal-body{
     background-image:	url("../../images/modalBackground.png");	
@@ -310,8 +313,10 @@ p.btnInArticlesHide:hover {
        Categories.html
   -------------------------------------- */   
 
+
 #categories {
-    margin-top: 150px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     text-align:center;
 }
 
@@ -331,6 +336,33 @@ p.btnInArticlesHide:hover {
     image:	url("../../images/background.jpg") no-repeat;
 
 }
+
+#titleTable {
+    font-family:  cursive;
+    color: #00FFFF;
+
+    text-align: center;
+
+}
+.subtitleTable {
+    letter-spacing: 3px;
+    color: #99ffcc;
+
+}
+#recipeText {
+   
+}
+
+#ingredientsText {
+
+}
+
+#panelTable{
+    float:left;
+    width:49%;
+   
+}
+
 
 
 /* --------------------------------------
@@ -375,8 +407,6 @@ p.btnInArticlesHide:hover {
     color: #5d5d5d;
 }
 
-
-
 /* --------------------------------------
    Carousel
    -------------------------------------- */
@@ -391,7 +421,6 @@ p.btnInArticlesHide:hover {
     color: black;
     padding-bottom:220px;
 }
-
 
 .slide3Text {
     color:#FFFFFF;
@@ -500,6 +529,7 @@ footer {
     transform: scale(1.1);
     cursor:default;
 }
+
 
 a#upArray {
     position: fixed;

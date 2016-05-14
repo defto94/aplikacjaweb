@@ -37,7 +37,7 @@ public class recipesController {
     public String create(){
         RecipeDao dao=new RecipeDao();
         dao.create(this.re);
-        return "index";
+        return "welcome";
     }
     
    
