@@ -7,9 +7,9 @@
         <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
-        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
-        <property name="hibernate.connection.username">webApp</property>
-        <property name="hibernate.connection.password">webApp</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@zebyzdrowozycdatabase.clmnaggmhrxo.eu-central-1.rds.amazonaws.com:1521:WEBAPP</property>
+        <property name="hibernate.connection.username">aleksandra</property>
+        <property name="hibernate.connection.password">aleksandra</property>
         <property name="hibernate.current_session_context_class">thread</property>	
         <mapping class="entities.Users"></mapping>     
         <mapping class="entities.Recipes"></mapping>  

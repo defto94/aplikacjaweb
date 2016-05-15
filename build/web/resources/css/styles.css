@@ -443,7 +443,7 @@ p.btnInArticlesHide:hover {
 }
 
 #slide3 {
-    background: url('../../images/carousel/bmiSrednie.jpg') top left no-repeat;
+    background: url('../../images/carousel/bmisrednie.jpg') top left no-repeat;
 }
 
 
@@ -460,7 +460,7 @@ p.btnInArticlesHide:hover {
 }
 
 #slide4cat {
-    background: url('../../images/carousel/zupa.jpg') top left no-repeat;
+    background: url('../../images/carousel/zupa2.jpg') top left no-repeat;
 }
 
 #slide5cat {
@@ -564,7 +564,7 @@ ul.unstyled {
     }
 
     #slide3 {
-        background: url('../../images/carousel/bmiBardzoMale.jpg') top left no-repeat;
+        background: url('../../images/carousel/bmibardzomale.jpg') top left no-repeat;
     }
 
 }
@@ -584,7 +584,7 @@ ul.unstyled {
     }
 
     #slide3 {
-        background: url('../../images/carousel/bmiMale.jpg') top left no-repeat;
+        background: url('../../images/carousel/bmimale.jpg') top left no-repeat;
     }
 
     /*
@@ -613,7 +613,7 @@ ul.unstyled {
     }
 
     #slide3 {
-        background: url('../../images/carousel/bmiDuze.jpg') top left no-repeat;
+        background: url('../../images/carousel/bmiduze.jpg') top left no-repeat;
     }
 }
 

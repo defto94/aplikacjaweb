@@ -12,19 +12,22 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/login.xhtml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/src/java/controller/UsersController.java</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/src/java/model/AbstractModel.java</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/src/java/model/RecipeDao.java</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/registration.xhtml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/src/java/controller/recipesController.java</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/resources/css/styles.css</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/modalBMI.xhtml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/src/java/model/UsersModel.java</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/modalCheck.xhtml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/contact.xhtml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/src/java/entities/Users.java</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/ProbaSzablonow/web/footer.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/web/footer.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/src/java/controller/recipesController.java</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/src/java/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/src/java/hibernate.reveng.xml</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/web/registration.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/web/add.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/src/java/entities/Recipes.java</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/web/login.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/build.xml</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/web/contact.xhtml</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/src/java/controller/UsersController.java</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/src/java/entities/Users.java</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/web/WEB-INF/config/faces-config.xml</file>
+            <file>file:/C:/Users/Aleksandra/Desktop/zebyzdrowozycBACKUP/ProbaSzablonow/web/articles.xhtml</file>
         </group>
     </open-files>
 </project-private>
