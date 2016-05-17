@@ -19,6 +19,7 @@
 
 #kontaktBody {
     background-image:	url("../../images/background.jpg");	
+    font-family:"Trebuchet MS";
 }
 
 #contactFeatures {
@@ -119,6 +120,8 @@
     font-family:"Trebuchet MS";
 }
 
+
+
 .headerColumns {
     font-family: "Roboto";
     font-weight: bold;
@@ -200,6 +203,7 @@ sendAlertRecipe {
 
 #zalogujBody {
     background-image:	url("../../images/modalBackground.png");	
+    font-family:"Trebuchet MS";
 }
 
 #loginForm {
@@ -211,11 +215,12 @@ sendAlertRecipe {
     margin-bottom:15px;
 }
 #btnLogin {
-    margin-top: 25px;
-    margin-bottom:25px; 
+    margin-top: 20px;
+    margin-bottom:15px; 
 }
 .modal-body{
-    background-image:	url("../../images/modalBackground.png");	
+    background-image:	url("../../images/modalBackground.png");
+    font-family:"Trebuchet MS";
 }
 
 #modalCategory{
@@ -231,7 +236,8 @@ sendAlertRecipe {
     background-image:	url("../../images/welcome.jpg");	
     background-size: 100%; 
     background-repeat: no-repeat; 
-    background-attachment: fixed;
+    background-attachment: fixed
+
 }
 
 .welcomeButtons {
@@ -255,9 +261,16 @@ sendAlertRecipe {
        Articles.html
   -------------------------------------- */     
 
-#artykulyBody{
-    background-image: url("../../images/background.jpg");	
+.facts{
+    text-align: center;
+    color:#00FFFF;
 }
+#artykulyBody{
+    background-image: url("../../images/background.jpg");
+    font-family:"Trebuchet MS";
+
+}
+
 
 #artykulyBody h4{
     margin-top:70px;
@@ -315,7 +328,7 @@ p.btnInArticlesHide:hover {
 
 
 #categories {
-    margin-top: 70px;
+    margin-top: 51px;
     margin-bottom: 70px;
     text-align:center;
 }
@@ -334,6 +347,7 @@ p.btnInArticlesHide:hover {
 
 #kategorieBody {
     image:	url("../../images/background.jpg") no-repeat;
+    font-family:"Trebuchet MS";
 
 }
 
@@ -350,7 +364,7 @@ p.btnInArticlesHide:hover {
 
 }
 #recipeText {
-   
+
 }
 
 #ingredientsText {
@@ -360,7 +374,7 @@ p.btnInArticlesHide:hover {
 #panelTable{
     float:left;
     width:49%;
-   
+
 }
 
 
@@ -429,6 +443,9 @@ p.btnInArticlesHide:hover {
 #myCarousel .item {
     height:400px;
 }
+#add {
+    padding-top: 12px;
+}
 
 #myCarousel2 .item {
     height:300px;
@@ -443,7 +460,7 @@ p.btnInArticlesHide:hover {
 }
 
 #slide3 {
-    background: url('../../images/carousel/bmisrednie.jpg') top left no-repeat;
+    background: url('../../images/carousel/BMISrednie.jpg') top left no-repeat;
 }
 
 
@@ -501,6 +518,7 @@ body {
 .panel {
     background-color: rgba(0, 0, 0, 0.6)!important;
     color:#FFFFFF;
+    width:100%;
 }
 
 footer {
@@ -564,7 +582,7 @@ ul.unstyled {
     }
 
     #slide3 {
-        background: url('../../images/carousel/bmibardzomale.jpg') top left no-repeat;
+        background: url('../../images/carousel/BMIBardzoMale.jpg') top left no-repeat;
     }
 
 }
@@ -584,7 +602,7 @@ ul.unstyled {
     }
 
     #slide3 {
-        background: url('../../images/carousel/bmimale.jpg') top left no-repeat;
+        background: url('../../images/carousel/BMIMale.jpg') top left no-repeat;
     }
 
     /*
@@ -613,7 +631,7 @@ ul.unstyled {
     }
 
     #slide3 {
-        background: url('../../images/carousel/bmiduze.jpg') top left no-repeat;
+        background: url('../../images/carousel/BMIDuze.jpg') top left no-repeat;
     }
 }
 

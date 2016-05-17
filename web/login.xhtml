@@ -6,49 +6,51 @@
       xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
 
     <h:body id = "zalogujBody">
+        <div id="wrapper">
+            <div id="header">
+                <ui:insert name="header" >
+                    <ui:include src="navbar.xhtml" />
+                </ui:insert>
+            </div>
 
-        <div id="header">
-            <ui:insert name="header" >
-                <ui:include src="navbar.xhtml" />
-            </ui:insert>
-        </div>
-        <div class = "container" id="myContainer">
-            <div class = "row" id="loginHeader"> 
-                <span class = "Text second"> Witaj z powrotem! </span> <br/>
-                <hr id = "colorLine"/>
-            </div> <!--end  row-1-->
-            <div class = "col-sm-4"></div> <!--martwy odstęp-->
-            <div class = "col-sm-6" id="loginForm">
-                <h:outputText value="#{usersController.errorMessage}" id="messageError" escape="false" />
-                <h:form class="form-horizontal">
-                    <div class ="form-group">		
-                        <div class = "col-lg-8">				
-                            <div class = "input-group"> <!--klasa dzięki której wyświetla się po lewej stronie człowiek -->
-                                <span class = "input-group-addon glyphicon glyphicon-envelope"></span>
-                                <h:inputText value="#{usersController.users.username}"  required="true" requiredMessage="Proszę wpisać login!" p:placeholder = "Login" class = "form-control" id = "inputName" />
+            <div class = "container" id="myContainer">
+                <div class = "row" id="loginHeader"> 
+                    <span class = "Text second"> Witaj z powrotem! </span> <br/>
+                    <hr id = "colorLine"/>
+                </div> <!--end  row-1-->
+                <div class = "col-sm-4"></div> <!--martwy odstęp-->
+                <div class = "col-sm-6" id="loginForm">
+                    <h:outputText value="#{usersController.errorMessage}" id="messageError" escape="false" />
+                    <h:form class="form-horizontal" prependId="false">
+                        <div class ="form-group">		
+                            <div class = "col-lg-8">				
+                                <div class = "input-group"> <!--klasa dzięki której wyświetla się po lewej stronie człowiek -->
+                                    <span class = "input-group-addon glyphicon glyphicon-envelope"></span>
+                                    <h:inputText value="#{usersController.users.username}"  required="true" requiredMessage="Proszę wpisać login!" p:placeholder = "Login" class = "form-control" id = "inputName" />
+                                </div>
+                                <h:messages for="inputName"/>
                             </div>
-                            <h:messages for="inputName"/>
                         </div>
-                    </div>
-                    <div class ="form-group">
-                        <div class = "col-lg-8">
-                            <div class = "input-group">
-                                <span class = "input-group-addon glyphicon glyphicon-lock"></span>
-                                <h:inputSecret value="#{usersController.users.password}"  required="true" requiredMessage="Proszę wpisać hasło!" class = "form-control"  id = "inputPasswordLog"  p:placeholder="Hasło" />
+                        <div class ="form-group">
+                            <div class = "col-lg-8">
+                                <div class = "input-group">
+                                    <span class = "input-group-addon glyphicon glyphicon-lock"></span>
+                                    <h:inputSecret value="#{usersController.users.password}"  required="true" requiredMessage="Proszę wpisać hasło!" class = "form-control"  id = "inputPasswordLog"  p:placeholder="Hasło" />
+                                </div>
+                                <h:commandButton action="#{usersController.login()}" value="Zaloguj się" class = "btn btn-success  col-sm-12" id="btnLogin"/><br/>
+                                <a href="registration.xhtml" id = "loginLink"><p>Nie masz jeszcze konta?</p></a>
+
+                                <h:messages for="inputPasswordLog"/>
                             </div>
-                              <h:commandButton action="#{usersController.login()}" value="Zaloguj się" class = "btn btn-success  col-sm-12" id="btnLogin"/><br/>
-                             <a href="registration.xhtml" id = "loginLink"><p>Nie masz jeszcze konta?</p></a>
-                      
-                            <h:messages for="inputPasswordLog"/>
-                            </div>
-                    </div>
-                </h:form>				
-            </div> <!--end col-sm-6-->
-        </div>
-        <div id="footer">
-            <ui:insert name="footer" >
-                <ui:include src="footer.xhtml" />
-            </ui:insert>
+                        </div>
+                    </h:form>				
+                </div> <!--end col-sm-6-->
+            </div>
+            <div id="footer">
+                <ui:insert name="footer" >
+                    <ui:include src="footer.xhtml" />
+                </ui:insert>
+            </div>
         </div>
     </h:body>
 
