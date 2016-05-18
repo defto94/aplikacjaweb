@@ -70,8 +70,8 @@ public class Mail implements Serializable {
     }
 
     public void sendMail() {
-        final String username = "defto94@gmail.com";
-        final String password = "alekssandra";
+        final String username = "zebyzdrowozyc@gmail.com";
+        final String password = "zebyzdrowozyc105";
         Properties properities = new Properties();
         properities.put("mail.smtp.auth", "true");
         properities.put("mail.smtp.starttls.enable", "true");
@@ -87,8 +87,8 @@ public class Mail implements Serializable {
         try {
 
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("defto94@gmail.com"));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("defto94@gmail.com"));
+            message.setFrom(new InternetAddress("zebyzdrowozyc@gmail.com"));
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("zebyzdrowozyc@gmail.com"));
             message.setSubject("Żeby zdrowo żyć");
             //message.setText("FROM: " + name + "<br/>" + mailAddress + " " + header + " " + contain);
             message.setContent(
@@ -98,6 +98,10 @@ public class Mail implements Serializable {
             Transport.send(message);
             this.successMessage="Twój e-mail został poprawnie wysłany. Wkrótce otrzymasz odpowiedź.";
             
+            this.setHeader("");
+            this.setContain("");
+            this.setMailAddress("");
+            this.setName("");
         } catch (MessagingException me) {
             throw new RuntimeException(me);
         }

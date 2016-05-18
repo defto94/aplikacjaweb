@@ -16,6 +16,15 @@ import javax.faces.bean.SessionScoped;
 public class recipesController {
     public List<Recipes> list = new ArrayList<Recipes>();
     public Recipes re = new Recipes();
+    private String errorMessage = "";
+
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
+    }
 
     public Recipes getRe() {
         return re;
@@ -37,6 +46,7 @@ public class recipesController {
     public String create(){
         RecipeDao dao=new RecipeDao();
         dao.create(this.re);
+        this.errorMessage = "Przepis został pomyślnie dodany. Teraz możesz go znaleźć w zakładce PRZEPISY. Dziękujemy.";
         return "welcome";
     }
     

@@ -326,6 +326,12 @@ p.btnInArticlesHide:hover {
        Categories.html
   -------------------------------------- */   
 
+.errorAdd {
+    color: #2197e0;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
 
 #categories {
     margin-top: 51px;
@@ -487,6 +493,10 @@ p.btnInArticlesHide:hover {
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
+#myContainer{
+    min-height: 100%;
+}
+
 body {
     -webkit-front-smoothing: antialased;
     text-rendering: optimizelegibility;

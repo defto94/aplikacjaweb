@@ -24,7 +24,7 @@
                     <a href="https://www.facebook.com/ola.srutkowska" target="_blank" data-toggle="popover" placement="right" data-trigger="hover" data-content="Poprzez Facebook">
                         <h:graphicImage value="/images/icons/facebook.png"/></a><br/>
 
-                    <a href="mailto:defto94@gmail.com" data-toggle="popover" data-trigger="hover" placement="right" data-content="Poprzez e-mail">
+                    <a href="mailto:zebyzdrowozyc@gmail.com" data-toggle="popover" data-trigger="hover" placement="right" data-content="Poprzez e-mail">
                         <h:graphicImage value="/images/icons/gmail.png"/></a><br/>
 
                     <a href="https://plus.google.com/102869232477597552762/posts" target="_blank" data-toggle="popover" data-trigger="hover" placement="right" data-content="Poprzez Google+">
@@ -65,7 +65,7 @@
                                 <div class = "col-lg-9">
                                     <h:inputTextarea  p:placeholder = " " required="true"  requiredMessage="Proszę uzupełnić treść!" value="#{mail.contain}"  class = "form-control" id = "inputMessage" label = "inputMessage" cols= "4"  rows = "4"/> 
                                     <h:messages for="inputMessage"/> 
-                                    <h:commandButton  type="submit"  id="sendAlert" class = "btn btn-info pull-right contactButton" value="Dodaj!"/>
+                                    <h:commandButton  type="submit" action="#{mail.sendMail()}" id="sendAlert" class = "btn btn-info pull-right contactButton" value="Wyślij!"/>
                                     <h:outputText value="#{mail.successMessage}" id="messageError" escape="false" />
                                 </div>
                             </div>

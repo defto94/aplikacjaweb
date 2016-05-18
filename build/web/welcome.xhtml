@@ -19,13 +19,16 @@
         <div class = "col-sm-4 " ></div> <!--martwy odstęp-->
         <div class = "col-sm-7">
             <h:form>
-                <h:column>
-                    
-                 #{usersController.users.username}
-                </h:column>
+               
                 <a href="#myModal" data-toggle="modal" class = "btn btn-danger welcomeButtons" id="add">Dodaj przepis</a>       
                 <h:commandButton value="Wyloguj się" class = "btn btn-danger welcomeButtons" id="logout" action="#{usersController.logout()}" />       
+                
             </h:form>
+            
+        </div>
+        <div class = "col-sm-7 errorAdd">
+        
+        <h:outputText value="#{cont.errorMessage}" id="messageError" escape="false" />
         </div>
         <div id="modal">
             <ui:insert name="modal" >
