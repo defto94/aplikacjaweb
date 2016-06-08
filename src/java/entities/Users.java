@@ -20,14 +20,13 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author Aleksandra
  */
 @Entity
-@Table(name = "USERS")
+@Table(name = "Users")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Users.findAll", query = "SELECT u FROM Users u"),
     @NamedQuery(name = "Users.findByUsername", query = "SELECT u FROM Users u WHERE u.username = :username"),
     @NamedQuery(name = "Users.findByEmail", query = "SELECT u FROM Users u WHERE u.email = :email"),
     @NamedQuery(name = "Users.findByPassword", query = "SELECT u FROM Users u WHERE u.password = :password")})
-   // @NamedQuery(name = "Users.findByPassword2", query = "SELECT u FROM Users u WHERE u.password2 = :password2")})
 public class Users implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -41,7 +40,6 @@ public class Users implements Serializable {
     @Basic(optional = false)
     @Column(name = "PASSWORD")
     private String password;
-    
 
     public Users() {
     }
@@ -79,7 +77,6 @@ public class Users implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
-
 
     @Override
     public int hashCode() {

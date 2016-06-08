@@ -9,6 +9,8 @@ import javax.faces.bean.*;
 import entities.*;
 import model.*;
 import encrypt.*;
+import java.util.ArrayList;
+import java.util.List;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
@@ -21,8 +23,37 @@ import javax.servlet.http.HttpSession;
 @SessionScoped
 public class UsersController {
 
-    private Users users = new Users();
+    private Users users;
     private String errorMessage = "";
+    private List<Users> list = new ArrayList<>();
+    public boolean zalogowany = false;
+    
+    
+    public UsersController() {
+        users = new Users();
+        list.add(users);
+    }
+    
+    
+      public boolean isZalogowany() {
+        return zalogowany;
+    }
+
+    public void setZalogowany(boolean zalogowany) {
+        this.zalogowany = zalogowany;
+    }
+    
+   
+    
+
+    public List<Users> getList() {
+        UsersModel users = new UsersModel();
+        return users.findAll();
+    }
+
+    public void setList(List<Users> list) {
+         this.list = list;
+    }
 
     public String getErrorMessage() {
         return errorMessage;
@@ -45,23 +76,34 @@ public class UsersController {
             UsersModel usersModel = new UsersModel();
             this.users.setPassword(EncryptPassword.generateStorngPasswordHash(this.users.getPassword()));
             usersModel.create(users);
+            
             this.errorMessage = "Twoje konto zostało pomyślnie utworzone. Możesz się już zalogować.";
             return errorMessage;
         } catch (Exception e) {
-            this.errorMessage = "Nie można utworzyć konta. Użytkownik o podanym loginie już istnieje.";
             return errorMessage;
         }
 
     }
+    
+    
 
+    
     public String login() {
+        
         try {
+            FacesContext context = FacesContext.getCurrentInstance();
             UsersModel accountModel = new UsersModel();
             Users users2 = accountModel.find(this.users.getUsername());
+            
             if (users2 != null) {
+                zalogowany=true;
+                
                 if (EncryptPassword.validatePassword(this.users.getPassword(),
                         users2.getPassword())) {
-                    return "welcome?faces-redirect=true";
+                        
+                      context.getExternalContext().getSessionMap().put("users", users);
+                      zalogowany=true;
+                    return "main?faces-redirect=true";
                 } else {
                     this.errorMessage = "Niepoprawne hasło. Proszę wpisać ponownie.";
                     return errorMessage;
@@ -70,10 +112,12 @@ public class UsersController {
                 this.errorMessage = "Niepoprawna nazwa użytkownika. Proszę wpisać ponownie.";
                 return errorMessage;
             }
+            
         } catch (Exception e) {
             this.errorMessage = "Coś poszło nie tak. Spróbuj ponownie.";
             return errorMessage;
         }
+        
     }
 
     public String logout() {

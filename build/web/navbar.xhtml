@@ -5,10 +5,10 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html">
 
     <h:head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <h:outputStylesheet library = "css" name="/bootstrap.min.css"/>
-
+        
+          <meta charset="UTF-8"/>
         <h:outputStylesheet library = "css" name="/styles.css"/>   
 
         <title>Żeby zdrowo żyć</title>
@@ -66,7 +66,7 @@
                                 <a href = "faces/contact.xhtml">KONTAKT</a>
                             </li>
                         </ul>
-
+                        <h:panelGroup rendered="#{empty users.username}">
                         <ul class = "nav navbar-nav pull-right">
                             <li class = "dropdown">
 
@@ -83,6 +83,28 @@
                                 </ul>
                             </li>
                         </ul>
+                        </h:panelGroup>
+                        
+                        <h:panelGroup rendered="#{not empty users.username}">
+                        <ul class = "nav navbar-nav pull-right">
+                            <li class = "dropdown">
+
+                                <a href = "#" class = "dropdown-toggle"  data-toggle = "dropdown"><span class = "glyphicon glyphicon-user"> </span>Witaj #{users.username} <strong class = "caret"></strong></a>
+
+                                <ul class = "dropdown-menu">
+                                    <li class= "commandNavbar">
+                                        <a href="faces/add.xhtml"> Dodaj przepis</a>
+                                    </li>
+                                    
+                                    <li class= "commandNavbar" >
+                                        <h:form> 
+                                           <h:commandLink value="Wyloguj się" action="#{usersController.logout}" />
+                                        </h:form>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </h:panelGroup>
 
                     </div>
                 </div> 

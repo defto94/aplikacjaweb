@@ -53,12 +53,11 @@
 
 
             <h:form>
-
+                <h:outputText value="#{cont.errorMessage}" id="messageError" escape="false" />
                 <h:dataTable value="#{cont.list}" var="i" class="table">
                     <h:column>
-
                         <div class="col-sm-1 "/>
-                        <div class="col-sm-9 panel" >
+                        <div class="col-sm-9 panel " >
                             <div class="col-sm-12 " id = "titleTable">
                                 <h2>#{i.name}</h2> 
                                 <hr id = "colorLine"/>
@@ -76,7 +75,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </h:column>
                 </h:dataTable>
 

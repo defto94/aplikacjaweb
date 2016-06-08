@@ -19,7 +19,6 @@
 
 #kontaktBody {
     background-image:	url("../../images/background.jpg");	
-    font-family:"Trebuchet MS";
 }
 
 #contactFeatures {
@@ -120,8 +119,6 @@
     font-family:"Trebuchet MS";
 }
 
-
-
 .headerColumns {
     font-family: "Roboto";
     font-weight: bold;
@@ -203,7 +200,6 @@ sendAlertRecipe {
 
 #zalogujBody {
     background-image:	url("../../images/modalBackground.png");	
-    font-family:"Trebuchet MS";
 }
 
 #loginForm {
@@ -215,12 +211,11 @@ sendAlertRecipe {
     margin-bottom:15px;
 }
 #btnLogin {
-    margin-top: 20px;
-    margin-bottom:15px; 
+    margin-top: 25px;
+    margin-bottom:25px; 
 }
 .modal-body{
-    background-image:	url("../../images/modalBackground.png");
-    font-family:"Trebuchet MS";
+    background-image:	url("../../images/modalBackground.png");	
 }
 
 #modalCategory{
@@ -236,8 +231,7 @@ sendAlertRecipe {
     background-image:	url("../../images/welcome.jpg");	
     background-size: 100%; 
     background-repeat: no-repeat; 
-    background-attachment: fixed
-
+    background-attachment: fixed;
 }
 
 .welcomeButtons {
@@ -261,16 +255,9 @@ sendAlertRecipe {
        Articles.html
   -------------------------------------- */     
 
-.facts{
-    text-align: center;
-    color:#00FFFF;
-}
 #artykulyBody{
-    background-image: url("../../images/background.jpg");
-    font-family:"Trebuchet MS";
-
+    background-image: url("../../images/background.jpg");	
 }
-
 
 #artykulyBody h4{
     margin-top:70px;
@@ -326,15 +313,9 @@ p.btnInArticlesHide:hover {
        Categories.html
   -------------------------------------- */   
 
-.errorAdd {
-    color: #2197e0;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 30px;
-}
 
 #categories {
-    margin-top: 51px;
+    margin-top: 70px;
     margin-bottom: 70px;
     text-align:center;
 }
@@ -353,7 +334,6 @@ p.btnInArticlesHide:hover {
 
 #kategorieBody {
     image:	url("../../images/background.jpg") no-repeat;
-    font-family:"Trebuchet MS";
 
 }
 
@@ -380,15 +360,17 @@ p.btnInArticlesHide:hover {
 #panelTable{
     float:left;
     width:49%;
-
 }
-
-
 
 /* --------------------------------------
    Navbar
    -------------------------------------- */
 
+.commandNavbar {
+    text-align: center;
+    text-align: center;
+    line-height: 50px;
+}
 .navbar-default {
     background-color:#2a2a2a;
     border-color: #FFFFFF;
@@ -449,9 +431,6 @@ p.btnInArticlesHide:hover {
 #myCarousel .item {
     height:400px;
 }
-#add {
-    padding-top: 12px;
-}
 
 #myCarousel2 .item {
     height:300px;
@@ -493,10 +472,6 @@ p.btnInArticlesHide:hover {
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
-#myContainer{
-    min-height: 100%;
-}
-
 body {
     -webkit-front-smoothing: antialased;
     text-rendering: optimizelegibility;
@@ -528,7 +503,6 @@ body {
 .panel {
     background-color: rgba(0, 0, 0, 0.6)!important;
     color:#FFFFFF;
-    width:100%;
 }
 
 footer {

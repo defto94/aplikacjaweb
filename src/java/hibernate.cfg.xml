@@ -1,16 +1,16 @@
-<?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE hibernate-configuration PUBLIC
-        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
-        <property name="hibernate.hbm2ddl.auto">update</property>
-        <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
-        <property name="hibernate.connection.url">jdbc:oracle:thin:@zebyzdrowozycdatabase.clmnaggmhrxo.eu-central-1.rds.amazonaws.com:1521:WEBAPP</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://zebyzdrowozycdb.clmnaggmhrxo.eu-central-1.rds.amazonaws.com:3306/zebyzdrowozyc</property>
         <property name="hibernate.connection.username">aleksandra</property>
         <property name="hibernate.connection.password">aleksandra</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.current_session_context_class">thread</property>	
+        <property name="hibernate.connection.useUnicode">true</property>
+        <property name="hibernate.connection.characterEncoding">UTF-8</property>
         <mapping class="entities.Users"></mapping>     
         <mapping class="entities.Recipes"></mapping>  
     </session-factory>

@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8' ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
@@ -7,12 +7,9 @@
 
     <h:body id = "artykulyBody">
 
-        <h:outputScript library="js" name="/jquery-1.8.2.min.js" />
-        <h:outputScript library="js" name="/bootstrap.min.js" />     
-        <h:outputScript library="js" name="/script.js" />
-        <h:outputScript library="js" name="/modernizr-2.6.2.min.js" />
-        <h:outputStylesheet library = "css" name="/bootstrap.min.css"/>
-        <h:outputStylesheet library = "css" name="/styles.css"/>   
+        <ui:insert name="header" >
+            <ui:include src="navbar.xhtml" />
+        </ui:insert>
 
         <div class = "container" id="myContainer">
             <div class = "col-sm-12" id="loginForm">
@@ -28,48 +25,48 @@
                         <hr id = "colorLine"/>
                     </div>    
 
-                    <form class="form-horizontal">
+                    <h:form class="form-horizontal">
 
 
                         <div class ="form-group">
-                            <label class="col-lg-3 control-label" for="inputMessage">Nazwa:</label>
+                            <label class="col-lg-3 control-label" for="inputMessageN">Nazwa:</label>
                             <div class = "col-lg-9">
-                                <textarea class = "form-control" value="#{cont.re.name}" id = "inputMessage" > </textarea> 
-
+                                <h:inputTextarea class = "form-control" required="true" requiredMessage="Proszę uzupełnić nazwę przepisu." value="#{cont.re.name}" id = "inputMessageN" /> 
+                                <h:messages for="inputMessageN"/>
                             </div>
+
                         </div>
 
                         <div class ="form-group">
-                            <label class="col-lg-3 control-label" for="inputMessage">Składniki:</label>
+                            <label class="col-lg-3 control-label" for="inputMessageI">Składniki:</label>
                             <div class = "col-lg-9">
-                                <textarea class = "form-control" value="#{cont.re.ingredients}" id = "inputMessage"  rows = "4"> </textarea> 
+                                <h:inputTextarea class = "form-control" required="true" requiredMessage="Proszę uzupełnić składniki." value="#{cont.re.ingredients}" id = "inputMessageI"  rows = "4"/> 
+                                <h:messages for="inputMessageI"/>
                             </div>
+
                         </div>
 
 
                         <div class ="form-group">
-                            <label class="col-lg-3 control-label" for="inputMessage">Przepis:</label>
+                            <label class="col-lg-3 control-label" for="inputMessageR">Przepis:</label>
                             <div class = "col-lg-9">
-                                <textarea class = "form-control" id = "inputMessage" value="#{cont.re.recipe}" rows = "20"> </textarea> 
-
-                                <h:commandButton type="submit" id ="sendAlert" class = "btn btn-info pull-right" action="#{cont.create()}" value="Wyślij!"/>
-
-                                <div class="alert alert-success alert-dismissable">
-                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                    Success! message sent successfully.
-                                </div>
-
+                                <h:inputTextarea class = "form-control" required="true" requiredMessage="Proszę uzupełnić przepis." id = "inputMessageR" value="#{cont.re.recipe}" rows = "10" /> 
+                                <h:messages for="inputMessageR"/>
+                                <h:commandButton type="submit" action="#{cont.create()}" class = "btn btn-info pull-right"  value="Dodaj!"/>
                             </div>
                         </div>
-
-
-                    </form>
+                    </h:form>
                 </div>
             </div>
         </div>
 
 
+        <div id="footer">
+            <ui:insert name="footer" >
+                <ui:include src="footer.xhtml" />
+            </ui:insert>
 
+        </div>
 
     </h:body>
 

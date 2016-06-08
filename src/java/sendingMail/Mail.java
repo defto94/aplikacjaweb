@@ -94,7 +94,7 @@ public class Mail implements Serializable {
             message.setContent(
                     "<b>Od: </b>" + name + ", <b>adres e-mail: </b>" + mailAddress + "<br/> "
                     + "<b>Temat: </b>" + header + "<br/>"
-                    + "<b>Wiadomosc: </b>" + contain + "<br/>", "text/html");
+                    + "<b>Wiadomosc: </b>" + contain + "<br/>", "text/html; charset=utf-8");
             Transport.send(message);
             this.successMessage="Twój e-mail został poprawnie wysłany. Wkrótce otrzymasz odpowiedź.";
             
