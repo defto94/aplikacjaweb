@@ -18,7 +18,8 @@
 }
 
 #kontaktBody {
-    background-image:	url("../../images/background.jpg");	
+    background-image:	url("../../images/background.jpg");
+    font-family:"Trebuchet MS";
 }
 
 #contactFeatures {
@@ -200,6 +201,8 @@ sendAlertRecipe {
 
 #zalogujBody {
     background-image:	url("../../images/modalBackground.png");	
+    font-family:"Trebuchet MS";
+    font-family:"Trebuchet MS";
 }
 
 #loginForm {
@@ -232,6 +235,7 @@ sendAlertRecipe {
     background-size: 100%; 
     background-repeat: no-repeat; 
     background-attachment: fixed;
+    
 }
 
 .welcomeButtons {
@@ -257,6 +261,7 @@ sendAlertRecipe {
 
 #artykulyBody{
     background-image: url("../../images/background.jpg");	
+    font-family:"Trebuchet MS";
 }
 
 #artykulyBody h4{
@@ -365,7 +370,10 @@ p.btnInArticlesHide:hover {
 /* --------------------------------------
    Navbar
    -------------------------------------- */
-
+.nav{
+    width: auto;
+    height: auto;
+}
 .commandNavbar {
     text-align: center;
     text-align: center;
@@ -510,6 +518,8 @@ footer {
     color:#eee;
     font-size: 12px;
     padding: 20px;
+    width: auto;
+    height: auto;
 }
 
 .circle {

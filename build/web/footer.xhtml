@@ -23,8 +23,13 @@
                             <li> <a href="faces/main.xhtml">Start </a></li>
                             <li> <a href="faces/articles.xhtml">Artykuły </a></li>
                             <li> <a href="faces/categories.xhtml">Przepisy </a></li>
-                            <li> <a href="faces/login.xhtml">Zaloguj się </a></li>
-                            <li> <a href="faces/registration.xhtml">Dołącz do nas </a></li>
+                            <h:panelGroup rendered="#{empty users.username}">
+                                <li> <a href="faces/login.xhtml">Zaloguj się </a></li>
+                                <li> <a href="faces/registration.xhtml">Dołącz do nas </a></li>
+                            </h:panelGroup>
+                            <h:panelGroup rendered="#{not empty users.username}">
+                                <li> <a href="faces/add.xhtml">Dodaj przepis!</a></li>
+                            </h:panelGroup>
                             <li> <a data-toggle="modal" href="#myModal">Sprawdź swoje BMI </a></li>
 
 

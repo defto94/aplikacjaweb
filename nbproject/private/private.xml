@@ -2,21 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/src/java/entities/Recipes.java</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/web/add.xhtml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/web/login.xhtml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/web/main.xhtml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/web/resources/css/styles.css</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/web/META-INF/context.xml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/web/navbar.xhtml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/web/categories.xhtml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/src/java/hibernate.reveng.xml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/src/java/controller/recipesController.java</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/web/WEB-INF/faces-config.xml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/src/conf/persistence.xml</file>
-            <file>file:/C:/Users/Aleksandra/Documents/NetBeansProjects/MYSQL/src/java/hibernate.cfg.xml</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
